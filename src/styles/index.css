@@ -1,0 +1,118 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "global.css";
+@import "components/textfield.css";
+@import "components/image.css";
+@import "components/unsplash.css";
+@import "components/searchapp.css";
+@import "components/spinner.css";
+@import "components/upload.css";
+
+main {
+  min-height: 100vh;
+}
+
+body {
+  @apply min-h-screen;
+}
+
+footer {
+  margin: 0 auto auto;
+}
+
+.btn {
+  @apply px-3 py-2 mx-2 mb-2 text-base font-bold text-white bg-blue-500 rounded-md shadow-md hover:bg-blue-400;
+}
+
+.footer-link {
+  @apply px-3 py-2 mx-2 mb-2 font-normal text-gray-100 rounded hover:text-gray-300 hover:bg-gray-400 hover:bg-opacity-20 hover:underline;
+}
+
+.link {
+  @apply text-blue-500 underline hover:text-blue-600;
+}
+
+[data-reach-dialog-content] pre {
+  /* width: 90vw; */ /* disabled for mobile */
+  margin: 10vh auto;
+  background: white;
+  padding: 2rem;
+  outline: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+button .material-icons {
+  @apply mx-2;
+}
+
+svg.bi-instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+#overlay {
+  @apply absolute top-0 left-0 z-50 flex flex-col items-center justify-center w-full h-full rounded-md pointer-events-none;
+}

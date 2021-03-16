@@ -1,9 +1,16 @@
-import { useStaticQuery, graphql } from "gatsby";
-import PropTypes from "prop-types";
-import React from "react";
-import { Helmet } from "react-helmet";
+/**
+ * SEO component that queries for data with
+ *  Gatsby's useStaticQuery React hook
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
 
-function SEO({ description, lang, meta, keywords, title }) {
+import { graphql, useStaticQuery } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import Helmet from 'react-helmet'
+
+function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(graphql`
     query DefaultSEOQuery {
       site {
@@ -14,15 +21,17 @@ function SEO({ description, lang, meta, keywords, title }) {
         }
       }
     }
-  `);
+  `)
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description || site.siteMetadata.description
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
+      title={title}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -56,34 +65,22 @@ function SEO({ description, lang, meta, keywords, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ]
-        .concat(
-          keywords.length > 0
-            ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : []
-        )
-        .concat(meta)}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      ].concat(meta)}
     />
-  );
+  )
 }
 
 SEO.defaultProps = {
   lang: `en`,
-  keywords: [],
   meta: [],
-};
+  description: ``,
+}
 
 SEO.propTypes = {
   description: PropTypes.string,
-  keywords: PropTypes.arrayOf(PropTypes.string),
   lang: PropTypes.string,
-  meta: PropTypes.array,
+  meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-};
+}
 
-export default SEO;
+export default SEO

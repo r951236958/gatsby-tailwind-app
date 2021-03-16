@@ -1,19 +1,21 @@
-import React from "react";
+import React from 'react'
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 function ContactPage() {
+  const title = 'Contact'
   return (
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Contact"
+        title={title}
       />
       <section>
         <form>
           <h2 className="mb-8 leading-loose">
-            Here is an example of a form built using the official Tailwind CSS Forms plugin.{` `}
+            Here is an example of a form built using the official Tailwind CSS
+            Forms plugin.{` `}
             <a
               className="font-bold text-gray-700 no-underline"
               href="https://github.com/tailwindlabs/tailwindcss-forms"
@@ -33,7 +35,7 @@ function ContactPage() {
           </label>
 
           <input
-            className="w-full mb-6 rounded-md border-gray-800"
+            className="w-full mb-6 border-gray-800 rounded-md"
             id="first-name"
             placeholder="Bill"
             type="text"
@@ -47,7 +49,7 @@ function ContactPage() {
           </label>
 
           <input
-            className="w-full mb-6 rounded-md border-gray-800"
+            className="w-full mb-6 border-gray-800 rounded-md"
             id="last-name"
             placeholder="Murray"
             type="text"
@@ -61,7 +63,7 @@ function ContactPage() {
           </label>
 
           <textarea
-            className="w-full mb-6 rounded-md border-gray-800"
+            className="w-full mb-6 border-gray-800 rounded-md"
             id="message"
             placeholder="Say something..."
             rows="8"
@@ -73,7 +75,7 @@ function ContactPage() {
         </form>
       </section>
     </Layout>
-  );
+  )
 }
 
-export default ContactPage;
+export default ContactPage
