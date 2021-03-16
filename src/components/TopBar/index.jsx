@@ -1,10 +1,11 @@
-import VisuallyHidden from '@reach/visually-hidden'
-import { Link, navigate } from 'gatsby'
-import firebase from 'gatsby-plugin-firebase'
-import PropTypes from 'prop-types'
-import React, { useEffect, useState } from 'react'
-import { menuList } from '../../config'
-import { getUser, isLoggedIn, logout } from '../../utils/auth'
+import VisuallyHidden from "@reach/visually-hidden"
+import { Link, navigate } from "gatsby"
+import firebase from "gatsby-plugin-firebase"
+import PropTypes from "prop-types"
+import React, { useEffect, useState } from "react"
+import { menuList } from "../../config"
+import { getUser, isLoggedIn, logout } from "../../utils/auth"
+import DarkModeToggle from '../DarkModeToggle'
 
 export default function TopBar({ siteTitle }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,7 +27,7 @@ export default function TopBar({ siteTitle }) {
 
   return (
     <>
-      <nav className="bg-gray-900">
+      <nav className="bg-gray-700">
         <div className="px-2 mx-auto max-w-7xl md:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -47,7 +48,7 @@ export default function TopBar({ siteTitle }) {
                 <svg
                   width="27"
                   height="27"
-                  className={(!menuOpen ? 'block' : 'hidden') + ' h-6 w-6'}
+                  className={(!menuOpen ? "block" : "hidden") + " h-6 w-6"}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -70,7 +71,7 @@ export default function TopBar({ siteTitle }) {
                   width="27"
                   height="27"
                   className={
-                    (menuOpen ? 'block md:hidden' : 'hidden') + ' h-6 w-6'
+                    (menuOpen ? "block md:hidden" : "hidden") + " h-6 w-6"
                   }
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -92,11 +93,7 @@ export default function TopBar({ siteTitle }) {
                 <VisuallyHidden>{siteTitle}</VisuallyHidden>
                 <Link to="/">
                   <svg
-                    width="36"
-                    height="36"
-                    className="block w-auto h-8 lg:hidden"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
+                    className="block w-8 h-8 fill-current lg:hidden"
                     viewBox="0 0 28 28"
                   >
                     <circle cx="14" cy="14" r="14" fill="#639" />
@@ -130,13 +127,12 @@ export default function TopBar({ siteTitle }) {
               </div>
               <div className="hidden md:block md:ml-6">
                 <div className="flex space-x-4">
-                  {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
+                  {/* Navbar Links */}
                   {menuList.map((items, i) => (
                     <Link
-                      key={`menulink-${i}`}
+                      key={`navlink-${i}`}
                       activeClassName="active"
-                    
-                      className="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-blueGray-500 hover:bg-opacity-40 hover:text-white active:bg-gray-600 hover:no-underline"
+                      className="px-3 py-2 text-sm font-medium text-red-300 rounded-md hover:bg-red-500 hover:bg-opacity-40 hover:text-white hover:no-underline"
                       to={items.link}
                     >
                       {items.name}
@@ -145,24 +141,19 @@ export default function TopBar({ siteTitle }) {
                 </div>
               </div>
             </div>
-            <div className="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
+            <div className="absolute inset-y-0 right-0 flex items-center pr-2 space-x-3 md:static md:inset-auto md:ml-6 md:pr-0">
+            <DarkModeToggle />
               <button className="p-1 text-gray-400 bg-gray-800 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                 <VisuallyHidden>View notifications</VisuallyHidden>
                 {/* Heroicon name: bell */}
                 <svg
-                  className="w-6 h-6"
-                  width="27"
-                  height="27"
-                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6 stroke-current stroke-2"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
                     d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
                   />
                 </svg>
@@ -179,11 +170,7 @@ export default function TopBar({ siteTitle }) {
                     <VisuallyHidden>Open user menu</VisuallyHidden>
 
                     <svg
-                      className="w-6 h-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
+                      className="w-6 h-6 fill-current"
                       viewBox="0 0 16 16"
                     >
                       <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -191,80 +178,24 @@ export default function TopBar({ siteTitle }) {
                     </svg>
                   </button>
                 </div>
-                {/*
-                    Profile dropdown panel, show/hide based on dropdown state.
-        
-                    For animated transitions, import { Transition } from '@headlessui/react' and wrap the next tag in this component:
-                    
-                <Transition
-                  show={isOpen}
-                  enter="transition ease-out duration-100"
-                  enterFrom="transform opacity-0 scale-95"
-                  enterTo="transform opacity-100 scale-100"
-                  leave="transition ease-in duration-75"
-                  leaveFrom="transform opacity-100 scale-100"
-                  leaveTo="transform opacity-0 scale-95"
-                ></Transition>
-                <div
-                  className="absolute right-0 z-50 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5"
-                  role="menu"
-                  aria-orientation="vertical"
-                  aria-labelledby="user-menu"
-                >
-                  {menuLinks.map((link, i) => (
-                    <Link
-                    
-                      key={i}
-                      activeClassName="active"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      to={link.link}
-                    >
-                      {link.name}
-                    </Link>
-                  ))}
-                  <Link
-                  
-                    to="/"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    role="menuitem"
-                  >
-                    Home
-                  </Link>
-                  <Link
-                  
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    to="/app/"
-                  >
-                    App
-                  </Link>
-
-                  <button
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    role="menuitem"
-                    onClick={async (event) => {
-                      event.preventDefault()
-                      await logout(firebase).then(() => navigate(`/app/login`))
-                    }}
-                  >
-                    Sign out
-                  </button>
-                </div>
-                */}
+                
               </div>
             </div>
           </div>
         </div>
 
         {/* Mobile menu, show/hide based on menu state. */}
-        <div className="md:hidden" id="mobile-menu">
+        <div
+          className={(menuOpen ? "block md:hidden" : "hidden") }
+          id="mobile-menu"
+        >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
+            {/* Mobile Menu Items */}
             {menuList.map((items, i) => (
               <Link
-              
                 key={`mobile-menulink-${i}`}
                 activeClassName="active"
-                className="block px-3 py-2 text-base font-medium text-gray-300 bg-gray-800 rounded-md hover:no-underline hover:bg-gray-700 hover:text-white"
+                className="block px-3 py-2 text-base font-medium text-gray-300 bg-blue-500 rounded-md hover:no-underline hover:bg-gray-700 hover:text-white"
                 to={items.link}
               >
                 {items.name}
@@ -277,11 +208,7 @@ export default function TopBar({ siteTitle }) {
               <div className="flex items-center px-5">
                 <div className="flex-shrink-0">
                   <svg
-                    width="27"
-                    height="27"
                     className="w-6 h-6 text-gray-300 rounded-full fill-current"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 496 512"
                   >
                     <path d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z" />
@@ -298,18 +225,14 @@ export default function TopBar({ siteTitle }) {
 
                 <button
                   className="flex-shrink-0 p-1 ml-auto text-gray-400 bg-gray-800 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                  onClick={async (event) => {
+                  onClick={async event => {
                     event.preventDefault()
                     await logout(firebase).then(() => navigate(`/app/login`))
                   }}
                 >
                   <svg
-                    width="27"
-                    height="27"
-                    className="w-6 h-6"
+                    className="w-6 h-6 fill-current"
                     aria-label="sign-out"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                   >
                     <path d="M160 217.1c0-8.8 7.2-16 16-16h144v-93.9c0-7.1 8.6-10.7 13.6-5.7l141.6 143.1c6.3 6.3 6.3 16.4 0 22.7L333.6 410.4c-5 5-13.6 1.5-13.6-5.7v-93.9H176c-8.8 0-16-7.2-16-16v-77.7m-32 0v77.7c0 26.5 21.5 48 48 48h112v61.9c0 35.5 43 53.5 68.2 28.3l141.7-143c18.8-18.8 18.8-49.2 0-68L356.2 78.9c-25.1-25.1-68.2-7.3-68.2 28.3v61.9H176c-26.5 0-48 21.6-48 48zM0 112v288c0 26.5 21.5 48 48 48h132c6.6 0 12-5.4 12-12v-8c0-6.6-5.4-12-12-12H48c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h132c6.6 0 12-5.4 12-12v-8c0-6.6-5.4-12-12-12H48C21.5 64 0 85.5 0 112z" />
@@ -318,7 +241,6 @@ export default function TopBar({ siteTitle }) {
               </div>
               <div className="px-2 mt-3 space-y-1">
                 <Link
-                
                   to="/app/"
                   className="block px-3 py-2 text-base font-medium text-gray-400 rounded-md hover:no-underline hover:text-white hover:bg-gray-700"
                 >
@@ -326,7 +248,6 @@ export default function TopBar({ siteTitle }) {
                 </Link>
 
                 <Link
-                
                   to="/app/profile/"
                   className="block px-3 py-2 text-base font-medium text-gray-400 rounded-md hover:no-underline hover:text-white hover:bg-gray-700"
                 >
@@ -335,7 +256,7 @@ export default function TopBar({ siteTitle }) {
 
                 <button
                   className="block px-3 py-2 text-base font-medium text-gray-400 rounded-md hover:no-underline hover:text-white hover:bg-gray-700"
-                  onClick={async (event) => {
+                  onClick={async event => {
                     event.preventDefault()
                     await logout(firebase).then(() => navigate(`/app/login`))
                   }}
@@ -346,14 +267,6 @@ export default function TopBar({ siteTitle }) {
             </div>
           )}
         </div>
-        {/*
-        <IdentityModal
-          showDialog={dialog}
-          onCloseDialog={() => setDialog(false)}
-          onLogin={user => navigate("/app/profile")}
-          onSignup={user => navigate("/app/profile")}
-        /> 
-        */}
       </nav>
     </>
   )

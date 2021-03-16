@@ -21,9 +21,18 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.green['500'],
+        theme_color: fullConfig.theme.colors.green["500"],
         display: `minimal-ui`,
         icon: `src/images/tailwind-icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        // useResolveUrlLoader: true,
+        sassOptions: {
+          javascriptEnabled: true,
+        },
       },
     },
     {
@@ -38,33 +47,33 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'images',
-        path: './src/images/',
+        name: `images`,
+        path: `./src/images/`,
       },
-      __key: 'images',
+      __key: `images`,
     },
     `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-prettier-eslint',
+      resolve: `gatsby-plugin-prettier-eslint`,
       options: {
         prettier: {
           patterns: [
             // the pattern "**/*.{js,jsx,ts,tsx}" is not used because we will rely on `eslint --fix`
-            '**/*.{css,scss,less}',
-            '**/*.{json,json5}',
-            '**/*.{graphql}',
-            '**/*.{md,mdx}',
-            '**/*.{html}',
-            '**/*.{yaml,yml}',
+            `**/*.{css,scss,less}`,
+            `**/*.{json,json5}`,
+            `**/*.{graphql}`,
+            `**/*.{md,mdx}`,
+            `**/*.{html}`,
+            `**/*.{yaml,yml}`,
           ],
         },
         eslint: {
-          patterns: '**/*.{js,jsx,ts,tsx}',
+          patterns: `**/*.{js,jsx,ts,tsx}`,
           customOptions: {
             fix: true,
             cache: true,
@@ -73,7 +82,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-firebase',
+      resolve: `gatsby-plugin-firebase`,
       options: {
         credentials: {
           apiKey: process.env.GATSBY_FIREBASE_API_KEY,
@@ -86,6 +95,7 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-dark-mode',
+    `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-use-dark-mode`,
   ],
 }

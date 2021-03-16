@@ -2,9 +2,9 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    // enabled: true, // 開發環境預設關閉，NODE_ENV設置production時啟用
+    enabled: true, // 開發環境預設關閉，NODE_ENV設置production時啟用
     // preserveHtmlElements: false, // 保留HTML元素，預設true，如需禁用此功能設置為false
-    content: ['./src/**/*.{js,jsx,ts,tsx}'],
+    content: ['./public/**/*.html','./src/**/*.{js,jsx,ts,tsx}'],
   },
   //purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: 'class', // or 'media' or 'class'
@@ -108,7 +108,7 @@ module.exports = {
       minHeight: ['hover', 'focus'],
       maxHeight: ['hover', 'focus'],
       backgroundAttachment: ['hover', 'focus'],
-      backgroundColor: ['active'],
+      backgroundColor: ['active', 'checked'],
       backgroundOpacity: ['active'],
       backgroundPosition: ['hover', 'focus'],
       backgroundSize: ['hover', 'focus'],
@@ -123,6 +123,7 @@ module.exports = {
         'hover',
         'focus',
         'active',
+        'checked',
       ],
       borderOpacity: ['dark', 'group-hover', 'active'],
       boxShadow: ['dark', 'group-hover', 'active'],

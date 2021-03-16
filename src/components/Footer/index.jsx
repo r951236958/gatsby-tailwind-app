@@ -26,7 +26,7 @@ export default function Footer() {
                 <ul className="space-y-2">
                   <li>
                     <Link
-                      href="#"
+                      to="/"
                       className="text-base font-normal"
                     >
                       Landingpages
@@ -34,7 +34,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      to="/"
                       className="text-base font-normal"
                     >
                       Features
@@ -42,7 +42,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      to="/"
                       className="text-base font-normal"
                     >
                       Download brochure
@@ -57,7 +57,7 @@ export default function Footer() {
                 <ul className="grid lg:grid-cols-2">
                   <li className="mb-2">
                     <Link
-                      href="#"
+                      to="/"
                       className="text-base font-normal"
                     >
                       Employment
@@ -65,7 +65,7 @@ export default function Footer() {
                   </li>
                   <li className="mb-2">
                     <Link
-                      href="#"
+                      to="/"
                       className="text-base font-normal"
                     >
                       Company
@@ -73,7 +73,7 @@ export default function Footer() {
                   </li>
                   <li className="mb-2">
                     <Link
-                      href="#"
+                      to="/"
                       className="text-base font-normal"
                     >
                       Childcare
@@ -81,7 +81,7 @@ export default function Footer() {
                   </li>
                   <li className="mb-2">
                     <Link
-                      href="#"
+                      to="/"
                       className="text-base font-normal"
                     >
                       Download brochure
@@ -159,12 +159,12 @@ export default function Footer() {
             <div className="w-full px-4 lg:w-6/12">
               <div className="left-0 text-sm text-white">
                 Built with{' '}
-                <Link
+                <a
                   className="text-sm font-semibold"
                   href="https://www.gatsbyjs.com"
                 >
                   Gatsby
-                </Link>
+                </a>
               </div>
             </div>
             <div className="w-full px-4 lg:w-6/12">
