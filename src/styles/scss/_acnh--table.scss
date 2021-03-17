@@ -1,0 +1,13 @@
+#acnh table {
+  tr {
+    th,
+    td {
+      &:first-child {
+        width: 200px;
+      }
+    }
+  }
+  img {
+    max-width: 50%;
+  }
+}

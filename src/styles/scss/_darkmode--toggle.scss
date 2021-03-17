@@ -12,50 +12,51 @@
   }
 
   label {
-    // position: relative;
-    // display: block;
-    // width: 45px;
-    // height: 25px;
-    // border-radius: 100px;
-    // background-color: rgb(37, 37, 37);
-    // overflow: hidden;
-    // cursor: pointer;
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: rgb(99, 195, 243);
+    overflow: hidden;
+    cursor: pointer;
 
     &:before,
     &:after {
-      display: block;
+      display: inline-block;
       position: absolute;
       content: "";
-      // width: 19px;
-      // height: 19px;
-      // border-radius: 50%;
-      // top: 3px;
-      // left: 3px;
-      // transition: 0.5s ease;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      top: 3px;
+      left: 3px;
+      transition: 0.5s ease;
     }
 
     &:before {
-      background-color: rgb(241, 110, 101);
-    }
-
-    &:after {
-      // background-color: rgb(37, 37, 37);
-      left: -58px;
-      transform: scale(0.00001);
+      content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(249, 242, 135)"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /> </svg>');
+      width: 24px;
+      height: 24px;
     }
   }
 
   input[type="checkbox"] {
-    // display: none;
+    display: none;
 
     &:checked + label {
-      &:before {
-        background-color: rgb(1, 219, 198);
-        transform: translateX(20px);
-      }
+      width: 60px;
+      height: 30px;
+      border-radius: 100px;
+      background-color: rgb(15, 16, 51);
+      overflow: hidden;
+      cursor: pointer;
 
-      &:after {
-        transform: translateX(75px) scale(1);
+      &:before {
+        content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(231, 252, 250)"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /> </svg>');
+        width: 24px;
+        height: 24px;
+        transform: translateX(30px);
       }
     }
   }

@@ -17,7 +17,7 @@ function ContactPage() {
             Here is an example of a form built using the official Tailwind CSS
             Forms plugin.{` `}
             <a
-              className="font-bold text-gray-700 no-underline"
+              className="font-bold text-blue-500 no-underline"
               href="https://github.com/tailwindlabs/tailwindcss-forms"
               target="_blank"
               rel="noopener noreferrer"

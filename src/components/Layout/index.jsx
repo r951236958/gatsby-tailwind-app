@@ -27,11 +27,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="text-gray-900 bg-gray-100 dark:bg-gray-900 dark:text-white">
+      <div className="text-gray-900 bg-white dark:bg-gray-900 dark:text-white">
         <ViewPort />
         <Scroll showBelow={250} />
         <TopBar siteTitle={site.siteMetadata.title} />
-        
+
         <div className="w-full">
           <main className="flex-1 w-full max-w-4xl px-4 py-8 mx-auto md:px-8 md:py-16">
             <div className="max-w-screen-lg px-4 pt-0 pb-6 mx-auto mt-10">

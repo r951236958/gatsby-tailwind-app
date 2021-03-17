@@ -4,6 +4,8 @@ import SEO from "../components/SEO"
 // import DarkModeToggle2 from '../components/DarkModeToggle2'
 // import DarkModeToggle3 from '../components/DarkModeToggle3'
 import catAndHumanIllustration from "../images/cat-and-human-illustration.svg"
+import Icon from '@material-ui/core/Icon'
+// import TableDemo from '../components/TableDemo'
 
 function IndexPage() {
   
@@ -37,8 +39,14 @@ function IndexPage() {
           </a>
           , a utility-first CSS framework.
         </p>
-        
+        <button className="px-4 py-2 text-gray-100 bg-blue-500 rounded-md">
+          <span className="w-6 h-6 text-gray-100 material-icons">home</span>
+          Button
+        </button>
+        <Icon>home</Icon>
+        <span className="material-icons">light_mode</span>
       </section>
+      
     </Layout>
   )
 }

@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import React, { useEffect, useState } from "react"
 import { menuList } from "../../config"
 import { getUser, isLoggedIn, logout } from "../../utils/auth"
-import DarkModeToggle from '../DarkModeToggle'
+import ThemeSwitch from '../ThemeSwitch'
 
 export default function TopBar({ siteTitle }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,7 +27,7 @@ export default function TopBar({ siteTitle }) {
 
   return (
     <>
-      <nav className="bg-gray-700">
+      <nav className="bg-cyan-600 dark:bg-gray-700">
         <div className="px-2 mx-auto max-w-7xl md:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -48,7 +48,7 @@ export default function TopBar({ siteTitle }) {
                 <svg
                   width="27"
                   height="27"
-                  className={(!menuOpen ? "block" : "hidden") + " h-6 w-6"}
+                  className={(!menuOpen ? 'block' : 'hidden') + ' h-6 w-6'}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -71,7 +71,7 @@ export default function TopBar({ siteTitle }) {
                   width="27"
                   height="27"
                   className={
-                    (menuOpen ? "block md:hidden" : "hidden") + " h-6 w-6"
+                    (menuOpen ? 'block md:hidden' : 'hidden') + ' h-6 w-6'
                   }
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -132,7 +132,8 @@ export default function TopBar({ siteTitle }) {
                     <Link
                       key={`navlink-${i}`}
                       activeClassName="active"
-                      className="px-3 py-2 text-sm font-medium text-red-300 rounded-md hover:bg-red-500 hover:bg-opacity-40 hover:text-white hover:no-underline"
+                      activeStyle={{ color: "#f3e37" }}
+                      className="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-900 active:bg-gray-900 hover:bg-opacity-40 active:bg-opacity-40 hover:text-white active:text-white hover:no-underline"
                       to={items.link}
                     >
                       {items.name}
@@ -141,24 +142,7 @@ export default function TopBar({ siteTitle }) {
                 </div>
               </div>
             </div>
-            <div className="absolute inset-y-0 right-0 flex items-center pr-2 space-x-3 md:static md:inset-auto md:ml-6 md:pr-0">
-            <DarkModeToggle />
-              <button className="p-1 text-gray-400 bg-gray-800 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                <VisuallyHidden>View notifications</VisuallyHidden>
-                {/* Heroicon name: bell */}
-                <svg
-                  className="w-6 h-6 stroke-current stroke-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                  />
-                </svg>
-              </button>
-
+            <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-2 space-x-3 md:static md:inset-auto md:ml-6 md:pr-0">
               <div className="relative mx-3">
                 <div className="space-x-4">
                   <button
@@ -169,24 +153,21 @@ export default function TopBar({ siteTitle }) {
                   >
                     <VisuallyHidden>Open user menu</VisuallyHidden>
 
-                    <svg
-                      className="w-6 h-6 fill-current"
-                      viewBox="0 0 16 16"
-                    >
+                    <svg className="w-6 h-6 fill-current" viewBox="0 0 16 16">
                       <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                       <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                     </svg>
                   </button>
                 </div>
-                
               </div>
+              <ThemeSwitch />
             </div>
           </div>
         </div>
 
         {/* Mobile menu, show/hide based on menu state. */}
         <div
-          className={(menuOpen ? "block md:hidden" : "hidden") }
+          className={menuOpen ? 'block md:hidden' : 'hidden'}
           id="mobile-menu"
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -195,7 +176,7 @@ export default function TopBar({ siteTitle }) {
               <Link
                 key={`mobile-menulink-${i}`}
                 activeClassName="active"
-                className="block px-3 py-2 text-base font-medium text-gray-300 bg-blue-500 rounded-md hover:no-underline hover:bg-gray-700 hover:text-white"
+                className="block px-3 py-2 text-base font-medium text-gray-300 bg-gray-700 rounded-md hover:no-underline hover:bg-gray-800 active:bg-gray-800 hover:text-white active:text-white"
                 to={items.link}
               >
                 {items.name}
@@ -225,7 +206,7 @@ export default function TopBar({ siteTitle }) {
 
                 <button
                   className="flex-shrink-0 p-1 ml-auto text-gray-400 bg-gray-800 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                  onClick={async event => {
+                  onClick={async (event) => {
                     event.preventDefault()
                     await logout(firebase).then(() => navigate(`/app/login`))
                   }}
@@ -256,7 +237,7 @@ export default function TopBar({ siteTitle }) {
 
                 <button
                   className="block px-3 py-2 text-base font-medium text-gray-400 rounded-md hover:no-underline hover:text-white hover:bg-gray-700"
-                  onClick={async event => {
+                  onClick={async (event) => {
                     event.preventDefault()
                     await logout(firebase).then(() => navigate(`/app/login`))
                   }}

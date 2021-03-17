@@ -6,21 +6,23 @@ export default function DarkModeToggle() {
     <ThemeToggler>
       {({ theme, toggleTheme }) => (
         <>
-          <div className="dark-button ">
-            <input
-              className="hidden border rounded-md border-gray-4"
-              id="theme-toggle"
-              type="checkbox"
-              onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
-              checked={theme === "dark"}
-            />
+          <div className="dark-toggle">
+              <input
+                className="hidden rounded-md outline-none"
+                id="theme-toggle"
+                type="checkbox"
+                onChange={(e) =>
+                  toggleTheme(e.target.checked ? 'dark' : 'light')
+                }
+                checked={theme === 'dark'}
+              />
             <label
-              className="relative block overflow-hidden rounded-full p-2 bg-transparent border border-gray-400 cursor-pointer"
+              className="relative block p-1 overflow-hidden transition duration-500 ease-in-out scale-x-50 bg-transparent bg-gray-800 rounded-full cursor-pointer checked:transform checked:scale-x-100 w-14"
               htmlFor="theme-toggle"
             >
-              {theme === "dark" ? (
+              {theme === 'dark' ? (
                 <svg
-                  className="w-6 h-6 text-yellow-400 stroke-current stroke-2"
+                  className="w-6 h-6 text-yellow-400 stroke-current stroke-2 hover:text-yellow-300"
                   viewBox="0 0 24 24"
                   fill="none"
                 >
@@ -32,7 +34,7 @@ export default function DarkModeToggle() {
                 </svg>
               ) : (
                 <svg
-                  className="w-6 h-6 stroke-current stroke-2 text-cyan-400"
+                  className="w-6 h-6 text-gray-400 stroke-current stroke-2 hover:text-gray-300"
                   viewBox="0 0 24 24"
                   fill="none"
                 >
