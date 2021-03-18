@@ -43,17 +43,10 @@ export const menuList = [
     ),
   },
   {
-<<<<<<< HEAD
     name: 'ACNH',
     title: 'ACNH',
     link: '/acnh/',
     route: '/acnh/',
-=======
-    name: 'Page2',
-    title: 'Page2',
-    link: '/page-2/',
-    route: '/page-2/',
->>>>>>> dd80eca6c4540e9b9290f978bd50702040a3b7a4
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

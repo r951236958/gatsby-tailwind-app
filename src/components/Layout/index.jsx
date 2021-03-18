@@ -7,11 +7,7 @@ import Footer3 from '../Footer3'
 // import Header from '../Header'
 // import Navbar from '../Navbar'
 import Scroll from '../Scroll'
-<<<<<<< HEAD
 import Title from '../Title'
-=======
-import Title from "../Title"
->>>>>>> dd80eca6c4540e9b9290f978bd50702040a3b7a4
 import TopBar from '../TopBar'
 import ViewPort from '../ViewPort'
 
@@ -37,15 +33,9 @@ const Layout = ({ children, title }) => {
         <TopBar siteTitle={site.siteMetadata.title} />
 
         <div className="w-full">
-<<<<<<< HEAD
           <main className="flex-1 w-full max-w-4xl p-4 mx-auto md:p-6">
             <div className="max-w-screen-lg px-4 pt-0 pb-6">
               <Title>{title}</Title>
-=======
-          <main className="flex-1 w-full max-w-4xl px-4 py-8 mx-auto md:px-6 md:py-10">
-            <div className="max-w-screen-lg px-4 pt-0 pb-6 mx-auto mt-8">
-                <Title>{title}</Title>
->>>>>>> dd80eca6c4540e9b9290f978bd50702040a3b7a4
               {children}
             </div>
           </main>

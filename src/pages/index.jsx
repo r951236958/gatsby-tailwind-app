@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
@@ -8,23 +7,12 @@ import { linkList } from '../config'
 
 function IndexPage() {
   const title = 'Home'
-=======
-import React from "react"
-import Layout from "../components/Layout"
-import LinkList from "../components/LinkList"
-import SEO from "../components/SEO"
-
-function IndexPage() {
-  const title = "Home"
-
->>>>>>> dd80eca6c4540e9b9290f978bd50702040a3b7a4
   return (
     <Layout title={title}>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title={title}
       />
-<<<<<<< HEAD
       <div className="mx-auto my-4">
         {linkList.map((items) => (
           <LinkList key={items.id} items={items} />
@@ -62,10 +50,6 @@ function IndexPage() {
         <span className="material-icons">light_mode</span>
       </section>
     
-=======
-
-      <LinkList />
->>>>>>> dd80eca6c4540e9b9290f978bd50702040a3b7a4
     </Layout>
   )
 }

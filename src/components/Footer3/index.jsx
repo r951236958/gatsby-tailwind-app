@@ -1,5 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
 import InstagramIcon from './InstagramIcon'
 
 const Footer3 = () => {
@@ -10,25 +9,6 @@ const Footer3 = () => {
           <div
             className="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20 overflow-hidden pointer-events-none"
             style={{ height: '80px', transform: 'translateZ(0)' }}
-=======
-import InstagramIcon from "./InstagramIcon"
-const Footer3 = () => {
-  return (
-    <>
-      <footer className="relative pt-8 pb-6 bg-gradient-to-b from-gray-800 to-gray-300">
-        <div
-          className="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20 overflow-hidden pointer-events-none"
-          style={{ height: "80px", transform: "translateZ(0)" }}
-        >
-          <svg
-            className="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
->>>>>>> dd80eca6c4540e9b9290f978bd50702040a3b7a4
           >
             <svg
               className="absolute bottom-0 overflow-hidden"
@@ -71,7 +51,6 @@ const Footer3 = () => {
                     className="inline-flex items-center justify-center w-10 h-10 p-3 mr-2 font-normal text-blue-600 bg-white rounded-full shadow-lg outline-none align-center focus:outline-none"
                     type="button"
                   >
-<<<<<<< HEAD
                     <svg
                       className="w-4 h-4 fill-current bi bi-facebook"
                       viewBox="0 0 16 16"
@@ -89,24 +68,6 @@ const Footer3 = () => {
                   <button
                     className="inline-flex items-center justify-center w-10 h-10 p-3 mr-2 font-normal text-gray-900 bg-white rounded-full shadow-lg outline-none align-center focus:outline-none"
                     type="button"
-=======
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                  </svg>
-                </button>
-                <button
-                  className="inline-flex items-center justify-center w-10 h-10 p-3 mr-2 font-normal bg-white rounded-full shadow-lg outline-none align-center focus:outline-none"
-                  type="button"
-                >
-                  <InstagramIcon className="w-4 h-4 fill-current icon-instagram" />
-                </button>
-                <button
-                  className="inline-flex items-center justify-center w-10 h-10 p-3 mr-2 font-normal text-gray-900 bg-white rounded-full shadow-lg outline-none align-center focus:outline-none"
-                  type="button"
-                >
-                  <svg
-                    className="w-4 h-4 fill-current bi bi-github"
-                    viewBox="0 0 16 16"
->>>>>>> dd80eca6c4540e9b9290f978bd50702040a3b7a4
                   >
                     <svg
                       className="w-4 h-4 fill-current bi bi-github"
@@ -200,7 +161,6 @@ const Footer3 = () => {
                 </div>
               </div>
             </div>
-<<<<<<< HEAD
             <hr className="my-6 border-gray-400" />
             <div className="flex flex-wrap items-center justify-center md:justify-between">
               <div className="w-full px-4 mx-auto text-center md:w-4/12">
@@ -214,21 +174,6 @@ const Footer3 = () => {
                   </a>
                   .
                 </div>
-=======
-          </div>
-          <hr className="my-6 border-gray-400" />
-          <div className="flex flex-wrap items-center justify-center md:justify-between">
-            <div className="w-full px-4 mx-auto text-center md:w-4/12">
-              <div className="py-1 text-sm font-semibold text-gray-600">
-                Copyright © {new Date().getFullYear()} Tailwind Starter Kit by{" "}
-                <a
-                  href="https://www.creative-tim.com"
-                  className="text-gray-600 hover:text-gray-900"
-                >
-                  Creative Tim
-                </a>
-                .
->>>>>>> dd80eca6c4540e9b9290f978bd50702040a3b7a4
               </div>
             </div>
           </div>
