@@ -5,11 +5,13 @@ import SEO from '../components/SEO'
 import dogIllustration from '../images/dog-illustration.svg'
 
 function AboutPage() {
+  const title = 'About'
+  
   return (
-    <Layout>
+    <Layout title={title}>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="About"
+        title={title}
       />
 
       <section className="flex flex-col items-center md:flex-row">

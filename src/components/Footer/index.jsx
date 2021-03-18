@@ -5,7 +5,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <>
-      <footer className="px-6 py-12 text-gray-300 bg-gray-800 lg:px-8">
+      <footer className="px-6 py-12 text-gray-300 bg-gradient-to-t from-gray-800 to-gray-300 via-black lg:px-8">
         <div className="max-w-screen-xl mx-auto mb-6 lg:mb-12 ">
           <span className="h-8 text-gray-300 bg-transparent fill-current">
             <svg
@@ -25,26 +25,17 @@ export default function Footer() {
               <nav className="mt-4">
                 <ul className="space-y-2">
                   <li>
-                    <Link
-                      to="/"
-                      className="text-base font-normal"
-                    >
+                    <Link to="/" className="text-base font-normal">
                       Landingpages
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/"
-                      className="text-base font-normal"
-                    >
+                    <Link to="/" className="text-base font-normal">
                       Features
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/"
-                      className="text-base font-normal"
-                    >
+                    <Link to="/" className="text-base font-normal">
                       Download brochure
                     </Link>
                   </li>
@@ -56,34 +47,22 @@ export default function Footer() {
               <nav className="mt-4">
                 <ul className="grid lg:grid-cols-2">
                   <li className="mb-2">
-                    <Link
-                      to="/"
-                      className="text-base font-normal"
-                    >
+                    <Link to="/" className="text-base font-normal">
                       Employment
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link
-                      to="/"
-                      className="text-base font-normal"
-                    >
+                    <Link to="/" className="text-base font-normal">
                       Company
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link
-                      to="/"
-                      className="text-base font-normal"
-                    >
+                    <Link to="/" className="text-base font-normal">
                       Childcare
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link
-                      to="/"
-                      className="text-base font-normal"
-                    >
+                    <Link to="/" className="text-base font-normal">
                       Download brochure
                     </Link>
                   </li>

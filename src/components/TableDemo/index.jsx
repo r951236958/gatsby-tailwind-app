@@ -1,27 +1,42 @@
-import React, { useMemo } from 'react'
+import React, { useState, useMemo } from 'react'
 import items from '../../../data'
-import { useTable } from 'react-table'
+import { useTable, useFilters } from 'react-table'
 
 const TableDemo = () => {
+  const [filterInput, setFilterInput] = useState('') // 篩選狀態
+
   const data = useMemo(() => items)
   const columns = useMemo(() => [
-    { Header: '藝術品', accessor: '藝術品' },
-    { Header: '只有真品', accessor: '只有真品' },
-    { Header: 'Real', accessor: 'Real' },
-    { Header: 'Fake', accessor: 'Fake' },
-    { Header: '備註', accessor: '備註' },
+    { Header: '藝術品', accessor: 'name' },
+    { Header: '只有真品', accessor: 'only' },
+    { Header: 'Real', accessor: 'real' },
+    { Header: 'Fake', accessor: 'fake' },
+    { Header: '備註', accessor: 'note' },
   ])
 
-  const tableInstance = useTable({ columns, data })
+  const tableInstance = useTable({ columns, data }, useFilters)
   const {
     getTableProps,
     getTableBodyProps,
     headerGroups,
     rows,
     prepareRow,
+    setFilter, // 加入篩選器
   } = tableInstance
+
+  // 當input改變時更新狀態
+  const handleFilterChange = (e) => {
+    const value = e.target.value || undefined
+    setFilter('name', value) // Update the show.name filter. Now our table will filter and show only the rows which have a matching value
+    setFilterInput(value)
+  }
   return (
     <>
+      <input
+        value={filterInput}
+        onChange={handleFilterChange}
+        placeholder={'Search name'}
+      />
       <table
         id="acnh"
         className="p-1 border border-gray-900 table-auto dark:border-gray-100"

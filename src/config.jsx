@@ -43,10 +43,10 @@ export const menuList = [
     ),
   },
   {
-    name: 'Gallery',
-    title: 'Gallery',
-    link: '/gallery/',
-    route: '/gallery/',
+    name: 'ACNH',
+    title: 'ACNH',
+    link: '/acnh/',
+    route: '/acnh/',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

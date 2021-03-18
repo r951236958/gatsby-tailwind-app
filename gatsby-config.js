@@ -5,6 +5,8 @@ require('dotenv').config({
 })
 const fullConfig = resolveConfig(tailwindConfig)
 
+// const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Tailwind`,
@@ -21,7 +23,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.green["500"],
+        theme_color: fullConfig.theme.colors.green['500'],
         display: `minimal-ui`,
         icon: `src/images/tailwind-icon.png`,
       },
@@ -97,5 +99,13 @@ module.exports = {
     },
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-use-dark-mode`,
+    // shouldAnalyseBundle && {
+    //   resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
+    //   options: {
+    //     analyzerMode: `static`,
+    //     reportFilename: `_bundle.html`,
+    //     openAnalyzer: false,
+    //   },
+    // },
   ],
 }

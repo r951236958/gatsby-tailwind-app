@@ -6,7 +6,7 @@ import SEO from '../components/SEO'
 function ContactPage() {
   const title = 'Contact'
   return (
-    <Layout>
+    <Layout title={title}>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title={title}

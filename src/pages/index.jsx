@@ -1,21 +1,23 @@
-import React from "react"
-import Layout from "../components/Layout"
-import SEO from "../components/SEO"
-// import DarkModeToggle2 from '../components/DarkModeToggle2'
-// import DarkModeToggle3 from '../components/DarkModeToggle3'
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg"
-import Icon from '@material-ui/core/Icon'
-// import TableDemo from '../components/TableDemo'
+import React from 'react'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
+import catAndHumanIllustration from '../images/cat-and-human-illustration.svg'
+import LinkList from '../components/LinkList'
+import { linkList } from '../config'
 
 function IndexPage() {
-  
+  const title = 'Home'
   return (
-    <Layout>
+    <Layout title={title}>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Home"
+        title={title}
       />
-
+      <div className="mx-auto my-4">
+        {linkList.map((items) => (
+          <LinkList key={items.id} items={items} />
+        ))}
+      </div>
       <section className="text-center">
         <img
           alt="Cat and human sitting on a couch"
@@ -43,10 +45,11 @@ function IndexPage() {
           <span className="w-6 h-6 text-gray-100 material-icons">home</span>
           Button
         </button>
-        <Icon>home</Icon>
+        <i className="far fa-heart">heart</i>
+        <i className="material-icons">home</i>
         <span className="material-icons">light_mode</span>
       </section>
-      
+    
     </Layout>
   )
 }

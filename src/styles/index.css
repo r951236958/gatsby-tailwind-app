@@ -3,12 +3,13 @@
 @import "tailwindcss/utilities";
 
 @import "global.css";
-@import "components/textfield.css";
-@import "components/image.css";
-@import "components/unsplash.css";
+/* @import "components/textfield.css"; */
+/* @import "components/image.css"; */
+/* @import "components/unsplash.css"; */
 @import "components/searchapp.css";
 @import "components/spinner.css";
-@import "components/upload.css";
+/* @import "components/upload.css"; */
+@import "components/react-toggle.css";
 
 main {
   min-height: 100vh;
