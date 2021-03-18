@@ -1,0 +1,7 @@
+table#acnh tr th:first-child,
+table#acnh tr td:first-child {
+  width: 200px;
+}
+table#acnh img {
+  max-width: 50%;
+}

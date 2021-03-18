@@ -6,7 +6,7 @@ export const menuList = [
     title: 'Home',
     link: '/',
     route: '/',
-    icon: <i className="mr-2 material-icons group-hover:text-cyan-400">home</i>,
+    icon: <span className="mr-2 material-icons group-hover:text-cyan-400">home</span>,
   },
   {
     name: 'About',
@@ -43,10 +43,17 @@ export const menuList = [
     ),
   },
   {
+<<<<<<< HEAD
     name: 'ACNH',
     title: 'ACNH',
     link: '/acnh/',
     route: '/acnh/',
+=======
+    name: 'Page2',
+    title: 'Page2',
+    link: '/page-2/',
+    route: '/page-2/',
+>>>>>>> dd80eca6c4540e9b9290f978bd50702040a3b7a4
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -90,9 +97,9 @@ export const linkList = [
     route:
       'https://translate.google.com/?hl=zh-TW&tab=TT#view=home&op=translate&sl=auto&tl=zh-CN',
     icon: (
-      <i className="mr-2 material-icons group-hover:text-cyan-400">
+      <span className="mr-2 material-icons group-hover:text-cyan-400">
         g_translate
-      </i>
+      </span>
     ),
   },
   {
@@ -104,9 +111,9 @@ export const linkList = [
     route:
       'https://docs.google.com/spreadsheets/d/1ugnB8DEgdhT5E8YbIidNcF4AI4rObaMCdSjT4qG9lp0/edit?ouid=116808363677895581574&usp=sheets_home&ths=true',
     icon: (
-      <i className="mr-2 material-icons group-hover:text-cyan-400">
+      <span className="mr-2 material-icons group-hover:text-cyan-400">
         insert_invitation
-      </i>
+      </span>
     ),
   },
   {
@@ -118,9 +125,9 @@ export const linkList = [
     route:
       'https://docs.google.com/document/d/1v-Ttj7IFEgzA0Bo_WclSQp1nc-Ek7GPQrHZCerHK8hM/edit',
     icon: (
-      <i className="mr-2 material-icons group-hover:text-cyan-400">
+      <span className="mr-2 material-icons group-hover:text-cyan-400">
         text_snippet
-      </i>
+      </span>
     ),
   },
   {
@@ -132,7 +139,7 @@ export const linkList = [
     route:
       'https://docs.google.com/spreadsheets/d/1cCY030BQSbDku2rkaoIjxMFN3U3ePLJSsnWG6qNHR8w/edit#gid=0',
     icon: (
-      <i className="mr-2 material-icons group-hover:text-cyan-400">calculate</i>
+      <span className="mr-2 material-icons group-hover:text-cyan-400">calculate</span>
     ),
   },
   {
@@ -144,7 +151,7 @@ export const linkList = [
     route:
       'https://docs.google.com/spreadsheets/d/1k9zLpIV5fNq66qujBc8cWxpvCa2nTqWScxlTmowG7Ws/edit#gid=1653933803',
     icon: (
-      <i className="mr-2 material-icons group-hover:text-cyan-400">group_add</i>
+      <span className="mr-2 material-icons group-hover:text-cyan-400">group_add</span>
     ),
   },
   {
@@ -156,9 +163,9 @@ export const linkList = [
     route:
       'https://docs.google.com/spreadsheets/d/1TBm2PKXAb9ihChkjfeFgtiCJ7wk8KV6K7NvM5_RkhoQ/edit#gid=0',
     icon: (
-      <i className="mr-2 material-icons group-hover:text-cyan-400">
+      <span className="mr-2 material-icons group-hover:text-cyan-400">
         folder_shared
-      </i>
+      </span>
     ),
   },
 ]

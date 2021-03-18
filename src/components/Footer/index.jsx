@@ -133,11 +133,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="container items-center justify-center max-w-screen-xl px-4 pt-8 mx-auto mt-8 border-t-2 border-gray-700 lg:justify-bettwn md:space-y-6 lg:mt-12">
+        <div className="container items-center justify-center max-w-screen-xl px-4 pt-8 mx-auto mt-8 border-t-2 border-gray-700 lg:justify-bettwn md:space-y-6 lg:my-12">
           <nav className="flex items-center justify-center space-x-6 inlin-flex">
             <div className="w-full px-4 lg:w-6/12">
               <div className="left-0 text-sm text-white">
-                Built with{' '}
+                Built with{" "}
                 <a
                   className="text-sm font-semibold"
                   href="https://www.gatsbyjs.com"
