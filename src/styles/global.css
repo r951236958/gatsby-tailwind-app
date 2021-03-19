@@ -5,6 +5,10 @@
 @import "components/spinner.css";
 @import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --black: #333333;
   --white: #f5f5f5;
@@ -12,11 +16,11 @@
   --foreground: var(--black);
   --transition: 0.5s ease;
 }
-
 html {
-  background: var(--background);
-  color: var(--foreground);
-  transition: color var(--transition), background var(--transition);
+  /* background: var(--white);
+  color: var(--foreground); */
+
+  transition: color var(--transition);
 }
 
 html::before {
@@ -24,12 +28,13 @@ html::before {
   position: fixed;
   height: 100%;
   width: 100%;
-  background: var(--black);
+  /* background: var(--black); 
   transform: translateX(-100%);
-  transition: transform var(--transition);
+  transition: transform var(--transition); */
   z-index: 0;
 }
 
+/* When the darkmode class is applied, set the pseudo element position to 0 */
 .darkmode::before {
   transform: translateX(0);
 }
