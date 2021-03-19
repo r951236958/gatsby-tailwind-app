@@ -1,15 +1,15 @@
-import { graphql, useStaticQuery } from 'gatsby'
-import Prism from 'prismjs'
-import PropTypes from 'prop-types'
-import React, { useEffect } from 'react'
-import Footer from '../Footer'
-import Footer3 from '../Footer3'
+import { graphql, useStaticQuery } from "gatsby"
+import Prism from "prismjs"
+import PropTypes from "prop-types"
+import React, { useEffect } from "react"
+import Footer from "../Footer"
+import Footer3 from "../Footer3"
 // import Header from '../Header'
 // import Navbar from '../Navbar'
-import Scroll from '../Scroll'
-import Title from '../Title'
-import TopBar from '../TopBar'
-import ViewPort from '../ViewPort'
+import Scroll from "../Scroll"
+import Title from "../Title"
+import TopBar from "../TopBar"
+import ViewPort from "../ViewPort"
 
 const Layout = ({ children, title }) => {
   const { site } = useStaticQuery(graphql`
@@ -32,17 +32,17 @@ const Layout = ({ children, title }) => {
         <Scroll showBelow={250} />
         <TopBar siteTitle={site.siteMetadata.title} />
 
-        <div className="w-full">
-          <main className="flex-1 w-full max-w-4xl p-4 mx-auto md:p-6">
+        <main>
+          <div className="w-full max-w-4xl p-4 mx-auto md:p-6">
             <div className="max-w-screen-lg px-4 pt-0 pb-6">
               <Title>{title}</Title>
               {children}
             </div>
-          </main>
+          </div>
           {/* </DrawerLeft> */}
           <Footer />
           <Footer3 />
-        </div>
+        </main>
       </div>
     </>
   )

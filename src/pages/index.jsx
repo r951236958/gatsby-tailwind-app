@@ -1,20 +1,24 @@
-import React from 'react'
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
-import catAndHumanIllustration from '../images/cat-and-human-illustration.svg'
-import LinkList from '../components/LinkList'
-import { linkList } from '../config'
+import React from "react"
+import Layout from "../components/Layout"
+import LinkList from "../components/LinkList"
+import SEO from "../components/SEO"
+import ThemeToggle from "../components/ThemeToggle"
+import { linkList } from "../config"
+import catAndHumanIllustration from "../images/cat-and-human-illustration.svg"
 
 function IndexPage() {
-  const title = 'Home'
+  const title = "Home"
   return (
     <Layout title={title}>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title={title}
       />
+      <div>
+        <ThemeToggle />
+      </div>
       <div className="mx-auto my-4">
-        {linkList.map((items) => (
+        {linkList.map(items => (
           <LinkList key={items.id} items={items} />
         ))}
       </div>
@@ -41,6 +45,8 @@ function IndexPage() {
           </a>
           , a utility-first CSS framework.
         </p>
+      </section>
+      <div>
         <button className="px-4 py-2 text-gray-100 bg-blue-500 rounded-md">
           <span className="w-6 h-6 text-gray-100 material-icons">home</span>
           Button
@@ -48,8 +54,7 @@ function IndexPage() {
         <i className="far fa-heart">heart</i>
         <i className="material-icons">home</i>
         <span className="material-icons">light_mode</span>
-      </section>
-    
+      </div>
     </Layout>
   )
 }
