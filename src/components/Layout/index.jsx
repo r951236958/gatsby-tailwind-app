@@ -25,6 +25,7 @@ const Layout = ({ children, title }) => {
     Prism.highlightAll()
   }, [])
 
+
   return (
     <>
       <div className="text-gray-900 bg-white dark:bg-gray-900 dark:text-white">

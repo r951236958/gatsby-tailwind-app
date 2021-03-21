@@ -1,0 +1,87 @@
+.theme-dark {
+  --dark-text: #292929;
+  --light-text: #f9f8f8;
+  --dark-background: #2f4550;
+  --light-background: #586f7c;
+  --accent: #b8dbd9;
+  --button-border: #b8dbd9;
+}
+
+.theme-light {
+  --dark-text: #5e4b56;
+  --light-text: #5e4b56;
+  --dark-background: #dbe7e4;
+  --light-background: #eddcd2;
+  --accent: #dbe7e4;
+  --button-border: #5e4b56;
+}
+
+#themeToggle {
+  .toggle-msg {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .toggle-wrapper {
+    display: block;
+    // width: 120px;
+    // margin: auto;
+  }
+
+  .toggle {
+    height: 30px;
+    width: 80px;
+    background: var(--foreground);
+    border-radius: 30px;
+    padding: 8px;
+    position: relative;
+    transition: background var(--transition);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: block;
+      top: 5px;
+      height: 20px;
+      width: 20px;
+      border-radius: 30px;
+      background: var(--background);
+      position: absolute;
+      z-index: 2;
+      transform: translate(0);
+      transition: transform var(--transition), background var(--transition);
+    }
+
+    &.enabled {
+      &::before {
+        transform: translateX(42px);
+      }
+    }
+
+    input[type="checkbox"] {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      margin: 0 5px;
+
+      svg {
+        // fill: var(--background);
+        height: 16px;
+        width: 16px;
+        z-index: 0;
+      }
+    }
+  }
+}

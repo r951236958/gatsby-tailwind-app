@@ -5,34 +5,67 @@
 @import "components/spinner.css";
 @import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
-* {
+.theme-light {
+  --primary: #f8f8f8;
+  --secondary: #dbe1e8;
+  --text-main: #0d0106;
+  --text-secondary: #454e56;
+  --accent: #009ffd;
+}
+.theme-dark {
+  --primary: #12181b;
+  --secondary: #2a2e35;
+  --text-main: #eaeaea;
+  --text-secondary: #b8b8b9;
+  --accent: #fc7753;
+}
+/* * {
   box-sizing: border-box;
+} */
+
+body.light-mode {
+  /* background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease; */
+
+  background: var(--white);
+  color: var(--foreground);
+  transition: color var(--transition);
+}
+body.dark-mode {
+  background: var(--black);
+  /* transform: translateX(-100%); */
+  transition: transform var(--transition);
+  /* background-color: #1a1919;
+  color: #999; */
 }
 
 :root {
   --black: #333333;
   --white: #f5f5f5;
+  --dark: rgb(15, 16, 51);
+  --blue: rgb(99, 195, 243);
   --backround: var(--white);
-  --foreground: var(--black);
+  --foreground: var(--dark);
   --transition: 0.5s ease;
 }
-html {
-  /* background: var(--white);
-  color: var(--foreground); */
+/* html {
+  background: var(--white);
+  color: var(--foreground); 
 
   transition: color var(--transition);
-}
+}*/
 
-html::before {
+/* html::before {
   content: "";
   position: fixed;
   height: 100%;
   width: 100%;
-  /* background: var(--black); 
+  background: var(--black); 
   transform: translateX(-100%);
-  transition: transform var(--transition); */
+  transition: transform var(--transition);
   z-index: 0;
-}
+} */
 
 /* When the darkmode class is applied, set the pseudo element position to 0 */
 .darkmode::before {

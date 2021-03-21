@@ -7,6 +7,8 @@ import { menuList } from "../../config"
 import { getUser, isLoggedIn, logout } from "../../utils/auth"
 import DarkModeToggle from '../DarkModeToggle'
 export default function TopBar({ siteTitle }) {
+  const [isOpen, setIsOpen] = useState(false)
+
   const [menuOpen, setMenuOpen] = useState(false)
   const user = getUser()
 
@@ -14,10 +16,13 @@ export default function TopBar({ siteTitle }) {
     setMenuOpen(false)
   }, [])
 
+  const handleMenuOpen = () => {
+    setIsOpen(!isOpen)
+  }
+
   function handleMobileMenuOpen() {
     setMenuOpen(!menuOpen)
   }
-
 
   return (
     <>
@@ -138,6 +143,23 @@ export default function TopBar({ siteTitle }) {
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-2 space-x-3 md:static md:inset-auto md:ml-6 md:pr-0">
               <DarkModeToggle />
+              <div className="relative mx-3">
+                <div className="space-x-4">
+                  <button
+                    className="p-1 text-gray-300 rounded-full hover:text-white focus:outline-none"
+                    id="user-menu"
+                    aria-haspopup="true"
+                    onClick={handleMenuOpen}
+                  >
+                    <VisuallyHidden>Open user menu</VisuallyHidden>
+
+                    <svg className="w-6 h-6 fill-current" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                      <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

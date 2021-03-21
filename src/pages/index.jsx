@@ -1,24 +1,25 @@
-import React from "react"
-import Layout from "../components/Layout"
-import LinkList from "../components/LinkList"
-import SEO from "../components/SEO"
-import ThemeToggle from "../components/ThemeToggle"
-import { linkList } from "../config"
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg"
+import React from 'react'
+import Layout from '../components/Layout'
+import LinkList from '../components/LinkList'
+import SEO from '../components/SEO'
+// import ThemeToggle from "../components/ThemeToggle"
+// import SwitchDarkMode from "../components/SwitchDarkMode"
+import { linkList } from '../config'
+import catAndHumanIllustration from '../images/cat-and-human-illustration.svg'
+
 
 function IndexPage() {
-  const title = "Home"
+  const title = 'Home'
+
   return (
     <Layout title={title}>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title={title}
       />
-      <div>
-        <ThemeToggle />
-      </div>
+      
       <div className="mx-auto my-4">
-        {linkList.map(items => (
+        {linkList.map((items) => (
           <LinkList key={items.id} items={items} />
         ))}
       </div>

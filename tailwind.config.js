@@ -4,7 +4,7 @@ module.exports = {
   purge: {
     enabled: true, // 開發環境預設關閉，NODE_ENV設置production時啟用
     // preserveHtmlElements: false, // 保留HTML元素，預設true，如需禁用此功能設置為false
-    content: ['./public/**/*.html','./src/**/*.{js,jsx,ts,tsx}'],
+    content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx}'],
   },
   //purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: 'class', // or 'media' or 'class'
@@ -31,6 +31,10 @@ module.exports = {
         0: '0ms',
       },
       colors: {
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        'main-text': 'var(--text-main)',
+        'secondary-text': 'var(--text-secondary)',
         lightBlue: colors.lightBlue,
         darkBlue: {
           50: '#f4f7fa',

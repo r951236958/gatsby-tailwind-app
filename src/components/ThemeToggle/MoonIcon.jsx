@@ -6,7 +6,7 @@ function MoonIcon(props) {
       width={16}
       height={16}
       fill="currentColor"
-      className="bi bi-moon-fill"
+      className="text-gray-100 fill-current bi bi-moon-fill"
       viewBox="0 0 16 16"
       {...props}
     >
