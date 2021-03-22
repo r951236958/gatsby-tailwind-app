@@ -1,13 +1,15 @@
 import React from 'react'
+import ModalImage from 'react-modal-image'
 
 export default [
   {
     name: '似曾相識的雕塑',
     only: '1',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/r3wqxMSmRZ.jpg"
-        alt="似曾相識的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/r3wqxMSmRZ.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/r3wqxMSmRZ.jpg"
+        alt="似曾相識的雕塑_真"
       />
     ),
     fake: '',
@@ -18,15 +20,17 @@ export default [
     name: '俊俏的名畫',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/KdjpRJdYvk.jpeg"
-        alt="俊俏的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/KdjpRJdYvk.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/KdjpRJdYvk.jpeg"
+        alt="俊俏的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/p3vuW6bpIT.jpeg"
-        alt="俊俏的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/p3vuW6bpIT.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/p3vuW6bpIT.jpeg"
+        alt="俊俏的名畫_假"
       />
     ),
     note: '真: 眉毛 \\ / (八字眉X)',
@@ -36,9 +40,10 @@ export default [
     name: '偉大的雕塑',
     only: '1',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/Fh7UOwfFSj.jpg"
-        alt="偉大的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/Fh7UOwfFSj.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/Fh7UOwfFSj.jpg"
+        alt="偉大的雕塑_真"
       />
     ),
     fake: '',
@@ -49,15 +54,17 @@ export default [
     name: '優美的名畫',
     only: '',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/8hihTLP2QH.jpeg"
-        alt="優美的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/8hihTLP2QH.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/8hihTLP2QH.jpeg"
+        alt="優美的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/COzQqCkTfI.jpeg"
-        alt="優美的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/COzQqCkTfI.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/COzQqCkTfI.jpeg"
+        alt="優美的名畫_假"
       />
     ),
     note: '真: 有3個獵人',
@@ -67,15 +74,17 @@ export default [
     name: '充滿母愛的雕塑',
     only: '',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/u79fG2C2ZE.jpg"
-        alt="充滿母愛的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/u79fG2C2ZE.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/u79fG2C2ZE.jpg"
+        alt="充滿母愛的雕塑_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/e1P_UVwxXm.jpg"
-        alt="充滿母愛的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/e1P_UVwxXm.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/e1P_UVwxXm.jpg"
+        alt="充滿母愛的雕塑_假"
       />
     ),
     note: '真: 沒有吐舌',
@@ -85,9 +94,10 @@ export default [
     name: '光線的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/Hggnvrb1EX.jpeg"
-        alt="光線的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/Hggnvrb1EX.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/Hggnvrb1EX.jpeg"
+        alt="光線的名畫_真"
       />
     ),
     fake: '',
@@ -98,15 +108,17 @@ export default [
     name: '出乎意料的雕塑',
     only: '',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/EFkj1jykgq.jpg"
-        alt="出乎意料的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/EFkj1jykgq.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/EFkj1jykgq.jpg"
+        alt="出乎意料的雕塑_真"
       />
     ),
     fake: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/9IhOGRFetZ.jpg"
-        alt="出乎意料的雕塑"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/9IhOGRFetZ.jpg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/9IhOGRFetZ.jpg"
+        alt="出乎意料的雕塑_假"
       />
     ),
     note: '真: 沒有蓋子',
@@ -116,15 +128,17 @@ export default [
     name: '勇敢的名畫',
     only: '',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/P2RtMLCJ1E.jpeg"
-        alt="勇敢的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/P2RtMLCJ1E.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/P2RtMLCJ1E.jpeg"
+        alt="勇敢的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/zOFh6Plhtg.jpeg"
-        alt="勇敢的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/zOFh6Plhtg.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/zOFh6Plhtg.jpeg"
+        alt="勇敢的名畫_假"
       />
     ),
     note: '真: 不是齊瀏海(中間一撮)',
@@ -134,15 +148,17 @@ export default [
     name: '動人的名畫',
     only: '',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/48uA_u49fE.jpeg"
-        alt="動人的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/48uA_u49fE.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/48uA_u49fE.jpeg"
+        alt="動人的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/QSAkiUD_Bn.jpeg"
-        alt="動人的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/QSAkiUD_Bn.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/QSAkiUD_Bn.jpeg"
+        alt="動人的名畫_假"
       />
     ),
     note: '真: 右上要有樹',
@@ -152,9 +168,10 @@ export default [
     name: '厲害的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/7Yx0YqUWs7.jpeg"
-        alt="厲害的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/7Yx0YqUWs7.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/7Yx0YqUWs7.jpeg"
+        alt="厲害的名畫_真"
       />
     ),
     fake: '',
@@ -165,9 +182,10 @@ export default [
     name: '名貴的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/YswB0Fa8RH.jpeg"
-        alt="名貴的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/YswB0Fa8RH.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/YswB0Fa8RH.jpeg"
+        alt="名貴的名畫_真"
       />
     ),
     fake: '',
@@ -178,9 +196,10 @@ export default [
     name: '和煦的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/Y5u7vrM5vc.jpeg"
-        alt="和煦的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/Y5u7vrM5vc.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/Y5u7vrM5vc.jpeg"
+        alt="和煦的名畫_真"
       />
     ),
     fake: '',
@@ -191,15 +210,17 @@ export default [
     name: '婀娜的名畫',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/U0mjnOMEZ6.jpeg"
-        alt="婀娜的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/U0mjnOMEZ6.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/U0mjnOMEZ6.jpeg"
+        alt="婀娜的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/e3Q6awrdUv.jpeg"
-        alt="婀娜的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/e3Q6awrdUv.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/e3Q6awrdUv.jpeg"
+        alt="婀娜的名畫_假"
       />
     ),
     note: '真: 貂是白色 (灰X)',
@@ -209,15 +230,17 @@ export default [
     name: '學術性的名畫',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/HUBlhlqi1d.jpeg"
-        alt="學術性的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/HUBlhlqi1d.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/HUBlhlqi1d.jpeg"
+        alt="學術性的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/ChYZS5jvJZ.jpeg"
-        alt="學術性的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/ChYZS5jvJZ.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/ChYZS5jvJZ.jpeg"
+        alt="學術性的名畫_假"
       />
     ),
     note: '真: 右上沒污漬',
@@ -227,9 +250,10 @@ export default [
     name: '常見的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/dcxg640YfQ.jpeg"
-        alt="常見的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/dcxg640YfQ.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/dcxg640YfQ.jpeg"
+        alt="常見的名畫_真"
       />
     ),
     fake: '',
@@ -240,15 +264,17 @@ export default [
     name: '平靜的名畫',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/ZNciKB4IMn.jpeg"
-        alt="平靜的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/ZNciKB4IMn.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/ZNciKB4IMn.jpeg"
+        alt="平靜的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/YHD2vFCS0K.jpeg"
-        alt="平靜的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/YHD2vFCS0K.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/YHD2vFCS0K.jpeg"
+        alt="平靜的名畫_假"
       />
     ),
     note: '真: 倒出來的牛奶很細一條',
@@ -258,9 +284,10 @@ export default [
     name: '強健的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/Sisgf_DJqe.jpeg"
-        alt="強健的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/Sisgf_DJqe.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/Sisgf_DJqe.jpeg"
+        alt="強健的名畫_真"
       />
     ),
     fake: '',
@@ -271,15 +298,17 @@ export default [
     name: '強壯的雕塑',
     only: '',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/RPqvya2XuC.jpg"
-        alt="強壯的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/RPqvya2XuC.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/RPqvya2XuC.jpg"
+        alt="強壯的雕塑_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/5ow41N163V.jpg"
-        alt="強壯的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/5ow41N163V.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/5ow41N163V.jpg"
+        alt="強壯的雕塑_假"
       />
     ),
     note: '真: 擲鐵餅的手上沒錶',
@@ -289,9 +318,10 @@ export default [
     name: '很好的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/WbPqrXRzHh.jpeg"
-        alt="很好的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/WbPqrXRzHh.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/WbPqrXRzHh.jpeg"
+        alt="很好的名畫_真"
       />
     ),
     fake: '',
@@ -302,15 +332,17 @@ export default [
     name: '有名的名畫',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/2b8jt4F2zB.jpeg"
-        alt="有名的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/2b8jt4F2zB.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/2b8jt4F2zB.jpeg"
+        alt="有名的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/QgfNxweIJ0.jpeg"
-        alt="有名的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/QgfNxweIJ0.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/QgfNxweIJ0.jpeg"
+        alt="有名的名畫_假"
       />
     ),
     note: '真: 蒙娜麗莎沒有眉毛',
@@ -320,15 +352,17 @@ export default [
     name: '有趣的名畫',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/G4KV6SQFlS.jpeg"
-        alt="有趣的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/G4KV6SQFlS.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/G4KV6SQFlS.jpeg"
+        alt="有趣的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/BFo5rEar1H.jpeg"
-        alt="有趣的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/BFo5rEar1H.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/BFo5rEar1H.jpeg"
+        alt="有趣的名畫_假"
       />
     ),
     note: '真: 胸前有花',
@@ -338,15 +372,17 @@ export default [
     name: '武士的雕刻',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/xV90PMRuGf.jpg"
-        alt="武士的雕刻"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/xV90PMRuGf.jpg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/xV90PMRuGf.jpg"
+        alt="武士的雕刻_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/Hw_nP4Z1AK.jpg"
-        alt="武士的雕刻"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/Hw_nP4Z1AK.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/Hw_nP4Z1AK.jpg"
+        alt="武士的雕刻_假"
       />
     ),
     note: '真: 沒有鏟子',
@@ -356,9 +392,10 @@ export default [
     name: '沉沒的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/7hBgn6RMWK.jpeg"
-        alt="沉沒的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/7hBgn6RMWK.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/7hBgn6RMWK.jpeg"
+        alt="沉沒的名畫_真"
       />
     ),
     fake: '',
@@ -369,15 +406,17 @@ export default [
     name: '漂亮的名畫',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/KK55oord02.jpeg"
-        alt="漂亮的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/KK55oord02.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/KK55oord02.jpeg"
+        alt="漂亮的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/dJt4jeLAc4.jpeg"
-        alt="漂亮的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/dJt4jeLAc4.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/dJt4jeLAc4.jpeg"
+        alt="漂亮的名畫_假"
       />
     ),
     note: '真: 圓型耳環、沒閉眼',
@@ -387,9 +426,10 @@ export default [
     name: '熱鬧的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/BlaD_gLGfy.jpeg"
-        alt="熱鬧的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/BlaD_gLGfy.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/BlaD_gLGfy.jpeg"
+        alt="熱鬧的名畫_真"
       />
     ),
     fake: '',
@@ -400,9 +440,10 @@ export default [
     name: '珍貴的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/CQ3tfT7Ar0.jpeg"
-        alt="珍貴的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/CQ3tfT7Ar0.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/CQ3tfT7Ar0.jpeg"
+        alt="珍貴的名畫_真"
       />
     ),
     fake: '',
@@ -413,15 +454,17 @@ export default [
     name: '石頭顱雕塑',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/PcA0Elb9SB.jpg"
-        alt="石頭顱雕塑"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/PcA0Elb9SB.jpg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/PcA0Elb9SB.jpg"
+        alt="石頭顱雕塑_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/s63sogLq2R.jpg"
-        alt="石頭顱雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/s63sogLq2R.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/s63sogLq2R.jpg"
+        alt="石頭顱雕塑_假"
       />
     ),
     note: '真: 沒有笑(嘴角沒上揚)',
@@ -431,9 +474,10 @@ export default [
     name: '磅礡的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/WQXr5YYRhg.jpeg"
-        alt="磅礡的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/WQXr5YYRhg.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/WQXr5YYRhg.jpeg"
+        alt="磅礡的名畫_真"
       />
     ),
     fake: '',
@@ -444,15 +488,17 @@ export default [
     name: '神祕的雕塑',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/6erkvf40YW.jpg"
-        alt="神祕的雕塑"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/6erkvf40YW.jpg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/6erkvf40YW.jpg"
+        alt="神祕的雕塑_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/_xWHrFuQBw.jpg"
-        alt="神祕的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/_xWHrFuQBw.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/_xWHrFuQBw.jpg"
+        alt="神祕的雕塑_假"
       />
     ),
     note: '真: 耳朵沒有飾品',
@@ -462,9 +508,10 @@ export default [
     name: '神秘的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/7qKijukkVm.jpeg"
-        alt="神秘的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/7qKijukkVm.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/7qKijukkVm.jpeg"
+        alt="神秘的名畫_真"
       />
     ),
     fake: '',
@@ -475,15 +522,17 @@ export default [
     name: '神聖的雕塑',
     only: '',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/JoKqpFtx0b.jpg"
-        alt="神聖的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/JoKqpFtx0b.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/JoKqpFtx0b.jpg"
+        alt="神聖的雕塑_真"
       />
     ),
     fake: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/A_3iON9MLv.jpg"
-        alt="神聖的雕塑"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/A_3iON9MLv.jpg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/A_3iON9MLv.jpg"
+        alt="神聖的雕塑_假"
       />
     ),
     note: '真: 右腳在前(我們的視角看是左邊那隻腳)',
@@ -493,15 +542,17 @@ export default [
     name: '端莊的名畫',
     only: '',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/JLonJ9GTDm.jpeg"
-        alt="端莊的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/JLonJ9GTDm.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/JLonJ9GTDm.jpeg"
+        alt="端莊的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/28krKHwTQu.jpeg"
-        alt="端莊的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/28krKHwTQu.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/28krKHwTQu.jpeg"
+        alt="端莊的名畫_假"
       />
     ),
     note: '真: 面朝右，人物占比60% (80% X)',
@@ -511,15 +562,17 @@ export default [
     name: '粗野的名畫右半邊',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/SAIXTtzTJt.jpeg"
-        alt="粗野的名畫右半邊"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/SAIXTtzTJt.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/SAIXTtzTJt.jpeg"
+        alt="粗野的名畫右半邊_真"
       />
     ),
     fake: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/ZXxCTxmY0q.jpeg"
-        alt="粗野的名畫右半邊"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/ZXxCTxmY0q.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/ZXxCTxmY0q.jpeg"
+        alt="粗野的名畫右半邊_假"
       />
     ),
     note: '真: 綠色風神',
@@ -529,15 +582,17 @@ export default [
     name: '粗野的名畫左半邊',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/98pqZXDPkY.jpeg"
-        alt="粗野的名畫左半邊"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/98pqZXDPkY.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/98pqZXDPkY.jpeg"
+        alt="粗野的名畫左半邊_真"
       />
     ),
     fake: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/Nn4HXRYQh2.jpeg"
-        alt="粗野的名畫左半邊"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/Nn4HXRYQh2.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/Nn4HXRYQh2.jpeg"
+        alt="粗野的名畫左半邊_假"
       />
     ),
     note: '真: 白色雷神',
@@ -547,15 +602,17 @@ export default [
     name: '細緻的名畫',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/FltOWYFT9y.jpeg"
-        alt="細緻的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/FltOWYFT9y.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/FltOWYFT9y.jpeg"
+        alt="細緻的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/pdOhVF4U9_.jpeg"
-        alt="細緻的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/pdOhVF4U9_.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/pdOhVF4U9_.jpeg"
+        alt="細緻的名畫_假"
       />
     ),
     note: '真: 藍色',
@@ -565,15 +622,17 @@ export default [
     name: '線索的雕塑',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/nMedb5AVuy.jpg"
-        alt="線索的雕塑"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/nMedb5AVuy.jpg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/nMedb5AVuy.jpg"
+        alt="線索的雕塑_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/kcZNxNO4S9.jpg"
-        alt="線索的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/kcZNxNO4S9.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/kcZNxNO4S9.jpg"
+        alt="線索的雕塑_假"
       />
     ),
     note: '真: 灰色石碑',
@@ -583,15 +642,17 @@ export default [
     name: '美麗的雕塑',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/VhiCDZVTm5.jpg"
-        alt="美麗的雕塑"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/VhiCDZVTm5.jpg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/VhiCDZVTm5.jpg"
+        alt="美麗的雕塑_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/VYKR1u7Gt0.jpg"
-        alt="美麗的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/VYKR1u7Gt0.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/VYKR1u7Gt0.jpg"
+        alt="美麗的雕塑_假"
       />
     ),
     note: '真: 沒戴項鍊',
@@ -601,15 +662,17 @@ export default [
     name: '肅穆的名畫',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/xq7Ojk94d8.jpeg"
-        alt="肅穆的名畫"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/xq7Ojk94d8.jpeg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/xq7Ojk94d8.jpeg"
+        alt="肅穆的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/U5e1JBrGXO.jpeg"
-        alt="肅穆的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/U5e1JBrGXO.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/U5e1JBrGXO.jpeg"
+        alt="肅穆的名畫_假"
       />
     ),
     note: '真: 畫中後方的人手要扶著',
@@ -619,9 +682,10 @@ export default [
     name: '舒適的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/ozs7JYIWlJ.jpeg"
-        alt="舒適的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/ozs7JYIWlJ.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/ozs7JYIWlJ.jpeg"
+        alt="舒適的名畫_真"
       />
     ),
     fake: '',
@@ -632,15 +696,17 @@ export default [
     name: '英挺的雕塑',
     only: '',
     real: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/T1biSSkSSX.jpg"
-        alt="英挺的雕塑"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/T1biSSkSSX.jpg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/T1biSSkSSX.jpg"
+        alt="英挺的雕塑_真"
       />
     ),
     fake: (
-      <img
-        src="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/v_1qPH3Eva.jpg"
-        alt="英挺的雕塑"
+      <ModalImage
+        small="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/v_1qPH3Eva.jpg"
+        large="https://image01.seesaawiki.jp/a/o/acnh-zh-game-info/v_1qPH3Eva.jpg"
+        alt="英挺的雕塑_假"
       />
     ),
     note: '真: 手邊沒有書',
@@ -650,15 +716,17 @@ export default [
     name: '遠古的雕塑',
     only: '',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/qFmIY3QiLX.jpg"
-        alt="遠古的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/qFmIY3QiLX.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/qFmIY3QiLX.jpg"
+        alt="遠古的雕塑_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/vtAbnifWSK.jpg"
-        alt="遠古的雕塑"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/vtAbnifWSK.jpg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/vtAbnifWSK.jpg"
+        alt="遠古的雕塑_假"
       />
     ),
     note: '真: 耳朵上沒有天線',
@@ -668,9 +736,10 @@ export default [
     name: '閃爍的名畫',
     only: '1',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/mbbqiLB9Pb.jpeg"
-        alt="閃爍的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/mbbqiLB9Pb.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/mbbqiLB9Pb.jpeg"
+        alt="閃爍的名畫_真"
       />
     ),
     fake: '',
@@ -681,15 +750,17 @@ export default [
     name: '驚人的名畫',
     only: '',
     real: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/RM66GUp5Ca.jpeg"
-        alt="驚人的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/RM66GUp5Ca.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/RM66GUp5Ca.jpeg"
+        alt="驚人的名畫_真"
       />
     ),
     fake: (
-      <img
-        src="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/enVX25CFnK.jpeg"
-        alt="驚人的名畫"
+      <ModalImage
+        small="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/enVX25CFnK.jpeg"
+        large="https://image02.seesaawiki.jp/a/o/acnh-zh-game-info/enVX25CFnK.jpeg"
+        alt="驚人的名畫_假"
       />
     ),
     note: '真: 中間的人有帽子',

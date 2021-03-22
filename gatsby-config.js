@@ -99,6 +99,28 @@ module.exports = {
     },
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-use-dark-mode`,
+    // {
+    //   resolve: `gatsby-source-mongodb`,
+    //   options: {
+    //     dbName: process.env.GATSBY_DB_NAME,
+    //     collection: process.env.GATSBY_DB_COLLECTIONS,
+    //     server: {
+    //       address: process.env.GATSBY_DB_URL,
+    //       port: 27017,
+    //     },
+    //     auth: {
+    //       user: process.env.GATSBY_DB_USERNAME,
+    //       password: process.env.GATSBY_DB_PASSWORD,
+    //     },
+    //     extraParams: {
+    //       replicaSet: 'Main-shard-0',
+    //       ssl: true,
+    //       authSource: 'admin',
+    //       retryWrites: true,
+    //     },
+    //   },
+    //   // query: { documents: { as_of: { $gte: 1604397088013 } } },
+    // },
     // shouldAnalyseBundle && {
     //   resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
     //   options: {

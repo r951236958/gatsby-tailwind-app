@@ -26,6 +26,7 @@ module.exports = {
         300: '300px',
         400: '400px',
         500: '500px',
+        600: '600px',
       },
       transitionDelay: {
         0: '0ms',

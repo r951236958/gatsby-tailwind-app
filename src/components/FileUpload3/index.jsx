@@ -10,9 +10,9 @@ import './FileUpload3.css'
 const FileUpload3 = () => {
   const {
     files,
-    pending,
-    next,
-    uploading,
+    // pending,
+    // next,
+    // uploading,
     uploaded,
     status,
     onSubmit,
