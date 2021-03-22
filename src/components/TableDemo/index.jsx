@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react'
-import items from '../../../data'
+import items from './data'
+// import items from '../../../acnh_data'
 import { useTable, useFilters } from 'react-table'
 
 
@@ -8,11 +9,11 @@ const TableDemo = () => {
 
   const data = useMemo(() => items)
   const columns = useMemo(() => [
-    { Header: '藝術品', accessor: 'name' },
-    { Header: '只有真品', accessor: 'only' },
-    { Header: 'Real', accessor: 'real' },
-    { Header: 'Fake', accessor: 'fake' },
-    { Header: '備註', accessor: 'note' },
+    { Header: '藝術品', accessor: 'col1' },
+    { Header: 'Image', accessor: 'col2' },
+    // { Header: 'Real', accessor: 'real' },
+    // { Header: 'Fake', accessor: 'fake' },
+    // { Header: '備註', accessor: 'note' },
   ])
 
   const tableInstance = useTable({ columns, data }, useFilters)
@@ -70,7 +71,7 @@ const TableDemo = () => {
                 {row.cells.map((cell, id) => {
                   return (
                     <td
-                      className="p-1 border border-gray-900 dark:border-gray-100"
+                      className="p-1 border border-gray-900 w-400 dark:border-gray-100"
                       {...cell.getCellProps()}
                       key={`tbody-td-${index}-${id}`}
                     >
