@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useState } from 'react'
 import Uploader from './file-upload.component'
 
@@ -6,8 +7,21 @@ const FileUpload = () => {
     profileImages: [],
   })
 
-  const updateUploadedFiles = (files) =>
+  const updateUploadedFiles = (files) =>{
     setNewUserInfo({ ...newUserInfo, profileImages: files })
+    const apiKey = process.env.GATSBY_IMGBB_API_KEY
+    
+    let body = new FormData()
+    body.set('key', apiKey)
+    body.append('image', files)
+
+    return axios({
+      method: 'post',
+      url: 'https://api.imgbb.com/1/upload',
+      data: body
+    })
+    
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault()

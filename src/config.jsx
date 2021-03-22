@@ -2,21 +2,29 @@ import React from 'react'
 
 export const menuList = [
   {
-    name: 'Home',
-    title: 'Home',
-    link: '/',
-    route: '/',
-    icon: <span className="mr-2 material-icons group-hover:text-cyan-400">home</span>,
+    name: "Home",
+    title: "Home",
+    link: "/",
+    route: "/",
+    icon: (
+      <span className="mr-2 material-icons group-hover:text-cyan-400">
+        home
+      </span>
+    ),
   },
   {
-    name: 'Upload',
-    link: '/upload/',
+    name: "Upload",
+    link: "/upload/",
   },
   {
-    name: 'About',
-    title: 'About',
-    link: '/about/',
-    route: '/about/',
+    name: "Test",
+    link: "/test/",
+  },
+  {
+    name: "About",
+    title: "About",
+    link: "/about/",
+    route: "/about/",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -30,10 +38,10 @@ export const menuList = [
     ),
   },
   {
-    name: 'Contact',
-    title: 'Contact',
-    link: '/contact/',
-    route: '/contact/',
+    name: "Contact",
+    title: "Contact",
+    link: "/contact/",
+    route: "/contact/",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -47,10 +55,10 @@ export const menuList = [
     ),
   },
   {
-    name: 'ACNH',
-    title: 'ACNH',
-    link: '/acnh/',
-    route: '/acnh/',
+    name: "ACNH",
+    title: "ACNH",
+    link: "/acnh/",
+    route: "/acnh/",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -65,11 +73,10 @@ export const menuList = [
     ),
   },
   {
-    name: 'Photos',
-    title: 'Photos',
-    link: '/photos/',
-    route: '/photos/',
-    
+    name: "Photos",
+    title: "Photos",
+    link: "/photos/",
+    route: "/photos/",
   },
 ]
 
