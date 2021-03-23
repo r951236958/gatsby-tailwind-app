@@ -1,5 +1,6 @@
 import '@fontsource/material-icons'
 import '@fontsource/roboto'
+import '@mdi/font/css/materialdesignicons.min.css'
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import 'react-toggle/style.css'
 // import './src/styles/index.css'

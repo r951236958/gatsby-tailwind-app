@@ -1,4 +1,4 @@
-.container {
+.uploadContainer {
   padding: 8px;
   width: 100%;
   box-sizing: border-box;
@@ -66,7 +66,7 @@ small {
 }
 
 @media screen and (max-width: 472px) {
-  .container {
+  .uploadContainer {
     padding: 6px;
   }
 

@@ -21,6 +21,10 @@ export const menuList = [
     link: "/test/",
   },
   {
+    name: "Pwd",
+    link: "/pwd/",
+  },
+  {
     name: "About",
     title: "About",
     link: "/about/",

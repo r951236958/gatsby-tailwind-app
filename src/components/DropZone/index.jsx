@@ -199,7 +199,7 @@ const DropZone = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="dnd-zone">
         <div
           className="drop-container"
           onDragOver={dragOver}

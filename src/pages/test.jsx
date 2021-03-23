@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
-import PasswordGenerator from "../components/PasswordGenerator"
+import PwdApp from '../PwdApp/App'
+// import PasswordGenerator from "../components/PasswordGenerator"
 import SEO from "../components/SEO"
 
 const TestPage = () => {
@@ -9,7 +10,7 @@ const TestPage = () => {
   return (
     <Layout titile={title}>
       <SEO title={title} />
-      <PasswordGenerator />
+      <PwdApp />
     </Layout>
   )
 }

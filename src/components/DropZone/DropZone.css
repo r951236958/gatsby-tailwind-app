@@ -12,14 +12,14 @@
   margin-bottom: 5px;
 }
 
-.container {
+.dnd-zone {
   transform: translateY(-100%);
   /* display: flex;
   align-items: center;
   justify-content: center; */
 }
 
-.container p {
+.dnd-zone p {
   color: red;
   text-align: center;
 }

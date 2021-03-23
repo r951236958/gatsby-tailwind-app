@@ -1,14 +1,19 @@
-import PropTypes from "prop-types"
-import React from "react"
-import "./CheckBox.css"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const CheckBox = props => {
+import './CheckBox.css'
+
+const CheckBox = (props) => {
   const { label, value, checked, name, onChange, disabled } = props
 
   return (
     <>
-      <div id="pwd-options" className="w-1/2 px-3 my-3 overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-full lg:my-3 lg:px-3 lg:w-1/2 xl:my-2 xl:px-2 xl:w-1/2">
-        <label className="flex justify-start space-x-4" htmlFor={name}>
+      <div className="w-1/2 lg:w-full">
+        <label
+          htmlFor={name}
+          className="inline-flex items-center justify-center space-x-2"
+          id="pwd-options"
+        >
           <input
             id={name}
             type="checkbox"
@@ -17,14 +22,14 @@ const CheckBox = props => {
             value={value}
             onChange={onChange}
             disabled={disabled}
-            className="align-middle checkbox--input"
+            className={`w-5 h-5 rounded text-cyan-500 bg-gray-700 bg-opacity-30 form-checkbox ${
+              disabled ? 'opacity-70' : 'opacity-100'
+            }`}
           />
-          <span className="text-base font-semibold text-gray-500 uppercase dark:text-gray-200 ">
-            {label}
-          </span>
+          <span>{label}</span>
           <span
-            className="check-mark"
-            style={{ opacity: disabled ? "0.7" : "" }}
+            className="hidden checkmark"
+            style={{ opacity: disabled ? '0.7' : '' }}
           ></span>
         </label>
       </div>
