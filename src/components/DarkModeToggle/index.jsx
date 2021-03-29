@@ -12,7 +12,7 @@ export default function DarkToggle() {
           <div className="box-border dark-toggle">
             <label
               className={`relative block p-1 overflow-hidden transition duration-500 ease-in-out scale-x-50 bg-transparent rounded-full cursor-pointer checked:transform checked:scale-x-100 ${
-                theme === 'dark' ? `bg-gray-800` : `bg-blue-300`
+                theme === 'dark' ? `bg-blue-300` : `bg-gray-800`
               }`}
               htmlFor="theme-toggle"
             >

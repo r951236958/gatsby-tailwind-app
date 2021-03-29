@@ -4,7 +4,7 @@ import ListGroup from 'components/ListGroup'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 // import C2CDemo from '../components/C2CDemo'
-// import UseRefEx from 'components/UseRefEx'
+import UseRefEx from 'components/UseRefEx'
 
 function C2CPage() {
   const title = 'Clipboard Page'
@@ -15,14 +15,14 @@ function C2CPage() {
   const inputRef = useRef()
 
 
-  const handleSelect = (value) => {
-    if (typeof value === 'string' && value.length > 0) {
-      setInputValues(value)
+  const handleSelect = (inputValue) => {
+    if (typeof inputValue === 'string' && inputValue.length > 0) {
+      setInputValues(inputValue)
     }
   }
 
   useEffect(() => {
-    if (typeof value === 'string' && inputValue.length > 0) {
+    if (typeof inputValue === 'string' && inputValue.length > 0) {
       setView(true)
     }
   }, [inputValue])
@@ -46,11 +46,11 @@ function C2CPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title={title}
       />
-
+      <UseRefEx />
       <div className="w-full">
         <span className="text-center text-blue-400">List Group</span>
         <ListGroup
-          listValue={listitems}
+          value={listitems}
           className="mb-5"
           onSelect={handleSelect}
           selectedLabel="Copied"
