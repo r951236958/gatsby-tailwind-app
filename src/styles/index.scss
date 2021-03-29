@@ -4,3 +4,10 @@
 @import "scss/input--number";
 @import "scss/custom--select";
 @import "scss/theme";
+@import "scss/sliderbar";
+@import "scss/grid";
+@import "scss/tooltip";
+
+input, select {
+    border-color: transparent;
+}

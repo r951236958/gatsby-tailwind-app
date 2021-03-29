@@ -1,0 +1,131 @@
+// .tooltip {
+//   position: relative;
+// }
+
+.tooltip {
+  position: relative;
+  // font-family: helvetica;
+  // text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .tooltip-message {
+    content: attr(data-tool-tip);
+    min-width: 120px;
+    max-width: 210px;
+    position: absolute;
+    text-transform: capitalize;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    padding: 0.75em;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+    transition: opacity 1s ease-in-out;
+
+    &.on-top {
+      top: -44px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &::after {
+        content: '';
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 8px solid rgba(0, 0, 0, 0.5);
+        position: absolute;
+        bottom: -12px;
+        right: 50%;
+        transform: translate(50%, -50%);
+      }
+    }
+
+    &.on-right {
+      top: 50%;
+      left: 100%;
+      margin-left: 11px;
+      transform: translateY(-50%);
+
+      &::after {
+        content: '';
+        border-top: 5px solid transparent;
+        border-right: 8px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 5px solid transparent;
+        position: absolute;
+        top: 50%;
+        left: -8px;
+        transform: translateY(-50%);
+      }
+    }
+
+    &.on-bottom {
+      bottom: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &::after {
+        content: '';
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: -8px;
+        right: 50%;
+        transform: translate(50%, 0%);
+      }
+    }
+
+    &.on-left {
+      top: 50%;
+      right: 100%;
+      margin-right: 11px;
+      transform: translateY(-50%);
+
+      &::after {
+        content: '';
+        border-bottom: 5px solid transparent;
+        border-top: 5px solid transparent;
+        border-left: 8px solid rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 50%;
+        right: -8px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.tooltip-text {
+  content: attr(data-tool-tip);
+  min-width: 120px;
+  max-width: 210px;
+  position: absolute;
+  text-transform: capitalize;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  padding: 0.75em;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 10;
+  transition: opacity 1s ease-in-out;
+
+  &.on-top {
+    top: -44px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::after {
+      content: '';
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 8px solid rgba(0, 0, 0, 0.5);
+      position: absolute;
+      bottom: -12px;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+}

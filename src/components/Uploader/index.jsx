@@ -1,7 +1,6 @@
 import 'react-dropzone-uploader/dist/styles.css'
 import Dropzone from 'react-dropzone-uploader'
 import React from 'react'
-require('dotenv').config()
 
 // const apiKey = process.env.REACT_APP_IMGBB_API_KEY
 // const apiURL = 'https://api.imgbb.com/1/upload?key=' + apiKey

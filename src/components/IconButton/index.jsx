@@ -1,7 +1,7 @@
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const Button = props => {
+const IconButton = (props) => {
   const { label, className, iconClass, handleClick } = props
 
   return (
@@ -13,11 +13,11 @@ const Button = props => {
   )
 }
 
-Button.propTypes = {
+IconButton.propTypes = {
   label: PropTypes.string,
   className: PropTypes.string,
   iconClass: PropTypes.string,
   handleClick: PropTypes.func,
 }
 
-export default Button
+export default IconButton

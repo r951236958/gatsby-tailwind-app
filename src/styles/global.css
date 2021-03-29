@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import "components/spinner.css";
+@import "components/tooltip.css";
 @import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 .theme-light {
@@ -48,6 +49,8 @@ body.dark-mode {
   --backround: var(--white);
   --foreground: var(--dark);
   --transition: 0.5s ease;
+  --tw-ring-color: transparent;
+  --tw-ring-shadow: transparent;
 }
 /* html {
   background: var(--white);

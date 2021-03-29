@@ -4,8 +4,10 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 const fullConfig = resolveConfig(tailwindConfig)
-
+const path = require(`path`)
 // const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+
+const config = require('gatsby-plugin-config')
 
 module.exports = {
   siteMetadata: {
@@ -14,6 +16,15 @@ module.exports = {
     author: `@taylorbryant`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-root-import`,
+      options: {
+        src: path.join(__dirname, `src`),
+        pages: path.join(__dirname, `src/pages`),
+        components: path.join(__dirname, `src/components`),
+        utils: path.join(__dirname, `src/utils`),
+      },
+    },
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     {
@@ -64,7 +75,7 @@ module.exports = {
       resolve: `gatsby-plugin-firebase`,
       options: {
         credentials: {
-          apiKey: process.env.GATSBY_FIREBASE_API_KEY,
+          apiKey: config.GATSBY_FIREBASE_API_KEY,
           authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
           databaseURL: process.env.GATSBY_FIREBASE_DATABASE_URL,
           projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,

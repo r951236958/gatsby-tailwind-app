@@ -1,42 +1,42 @@
-import React, { useEffect, useMemo, useState } from "react"
+import React, { useState, useEffect, useMemo } from 'react'
+
+import IconButton from 'components/IconButton'
+import SliderBar from 'components/SliderBar'
+import CheckBox from 'components/CheckBox'
 import {
-  copyToClipBoard,
   generatePassword,
   setPasswordLength,
-} from "../../../utils/Helper"
-import Button from "./Button"
-import CheckBox from "./CheckBox"
-import "./Container.css"
-import Slider from "./Slider"
+  copyToClipBoard,
+} from 'utils/Helper'
 
 const CHECKBOX_LIST = [
   {
     id: 0,
-    name: "uppercase",
-    label: "Uppercase",
+    name: 'uppercase',
+    label: 'Uppercase',
     isChecked: true,
   },
   {
     id: 1,
-    name: "lowercase",
-    label: "Lowercase",
+    name: 'lowercase',
+    label: 'Lowercase',
     isChecked: true,
   },
   {
     id: 2,
-    name: "symbols",
-    label: "Symbols",
+    name: 'symbols',
+    label: 'Symbols',
     isChecked: true,
   },
   {
     id: 3,
-    name: "numbers",
-    label: "Numbers",
+    name: 'numbers',
+    label: 'Numbers',
     isChecked: true,
   },
 ]
 
-const Container = props => {
+const PwdContainer = (props) => {
   const { setPassword, setRange, setPasswordProps, passwordRef, type } = props
 
   const [rangeValue, setRangeValue] = useState(12)
@@ -47,7 +47,7 @@ const Container = props => {
     numbers: true,
   })
   const [checked, setChecked] = useState(false)
-  const [checkedName, setCheckedName] = useState("")
+  const [checkedName, setCheckedName] = useState('')
   const [minMaxValue, setMinMaxValue] = useState({
     min: 1,
     max: 60,
@@ -68,7 +68,7 @@ const Container = props => {
   }, [uppercase, lowercase, symbols, numbers])
 
   const checkBoxCount = () => {
-    const checkedCount = Object.keys(checkbox).filter(key => checkbox[key])
+    const checkedCount = Object.keys(checkbox).filter((key) => checkbox[key])
     const disabled = checkedCount.length === 1
     const name = checkedCount[0]
     if (disabled) {
@@ -76,15 +76,15 @@ const Container = props => {
       setCheckedName(name)
     } else {
       setChecked(false)
-      setCheckedName("")
+      setCheckedName('')
     }
   }
 
   const updateCheckBoxes = () => {
-    if (type === "pin") {
-      CHECKBOX_LIST.map(checkbox => {
+    if (type === 'pin') {
+      CHECKBOX_LIST.map((checkbox) => {
         const name = checkbox.name
-        if (name !== "numbers") {
+        if (name !== 'numbers') {
           checkbox.isChecked = false
           const checkboxProps = {
             name,
@@ -97,15 +97,15 @@ const Container = props => {
           }
           checkBoxProperties(checkboxProps)
         }
-        return ""
+        return ''
       })
     } else {
-      CHECKBOX_LIST.map(checkbox => {
+      CHECKBOX_LIST.map((checkbox) => {
         const name = checkbox.name
         checkbox.isChecked = true
         const checkboxProps = {
           name,
-          checkedName: "",
+          checkedName: '',
           checked: false,
           isChecked: checkbox.isChecked,
           min: 1,
@@ -113,12 +113,12 @@ const Container = props => {
           length: 12,
         }
         checkBoxProperties(checkboxProps)
-        return ""
+        return ''
       })
     }
   }
 
-  const checkBoxProperties = checkBoxProps => {
+  const checkBoxProperties = (checkBoxProps) => {
     const {
       name,
       checked,
@@ -129,7 +129,7 @@ const Container = props => {
       length,
     } = checkBoxProps
 
-    setCheckBox(prevState => ({ ...prevState, [name]: isChecked }))
+    setCheckBox((prevState) => ({ ...prevState, [name]: isChecked }))
     setChecked(checked)
     setCheckedName(checkedName)
     setPasswordLength(length)
@@ -149,20 +149,20 @@ const Container = props => {
     setPasswordProps(checkbox)
   }
 
-  const onChangeSlider = e => {
+  const onChangeSlider = (e) => {
     setPasswordLength(e.target.value)
     setRangeValue(e.target.value)
     setRange(e.target.value)
     passwordGenerated(checkbox, e.target.value)
   }
 
-  const onChangeCheckBox = e => {
-    if (type !== "pin") {
+  const onChangeCheckBox = (e) => {
+    if (type !== 'pin') {
       let { name, checked } = e.target
-      CHECKBOX_LIST.map(checkbox => {
+      CHECKBOX_LIST.map((checkbox) => {
         if (checkbox.name === name) {
           checkbox.isChecked = checked
-          setCheckBox(prevState => ({
+          setCheckBox((prevState) => ({
             ...prevState,
             [name]: checkbox.isChecked,
           }))
@@ -170,25 +170,24 @@ const Container = props => {
           setRangeValue(rangeValue)
         }
 
-        return ""
+        return ''
       })
     }
   }
 
-  const copyClipBoard = elementRef => e => {
+  const copyClipBoard = (elementRef) => (e) => {
     e.preventDefault()
     copyToClipBoard(elementRef)
   }
 
   return (
-    <div className="p-5 password-settings">
+    <div className="password-settings">
       <h3 className="h3">Use the slider, and select from the options.</h3>
 
-      <div className="row">
-        <div className="col-md-12">
+      <div className="pwsSliderbar">
           <div className="form-group">
             &nbsp;
-            <Slider
+            <SliderBar
               min={parseInt(min, 10)}
               max={parseInt(max, 10)}
               step={1}
@@ -197,36 +196,35 @@ const Container = props => {
               onChangeValue={onChangeSlider}
             />
           </div>
-        </div>
+        
 
-        <div className="mx-auto col-md-8">
-          <div className="flex flex-wrap -mx-3 overflow-hidden sm:-mx-2 md:-mx-2 lg:-mx-3 xl:-mx-2 checkbox--container">
-            {CHECKBOX_LIST.map(checkbox => (
-              <CheckBox
-                key={checkbox.id}
-                name={checkbox.name}
-                checked={checkbox.isChecked}
-                label={checkbox.label}
-                value={checkbox.isChecked}
-                onChange={onChangeCheckBox}
-                disabled={
-                  checked && checkbox.isChecked && checkedName === checkbox.name
-                }
-              />
-            ))}
-          </div>
+        <div className="checkbox-grid">
+          {CHECKBOX_LIST.map((checkbox) => (
+            <CheckBox
+              key={checkbox.id}
+              name={checkbox.name}
+              checked={checkbox.isChecked}
+              label={checkbox.label}
+              value={checkbox.isChecked}
+              onChange={onChangeCheckBox}
+              disabled={
+                checked && checkbox.isChecked && checkedName === checkbox.name
+              }
+            />
+          ))}
         </div>
       </div>
       <br />
 
-      <div className="text-center">
+      <div className="text-center PwdBottom">
         <div className="row">
           <div className="col-md-12">
-            <Button
-              className="px-4 py-2 text-gray-200 bg-blue-500 border border-gray-200 rounded-md hover:text-white hover:bg-blue-600 hover:border-white password-btn"
-              label="Copy Password"
-              handleClick={copyClipBoard(passwordRef.current)}
-            />
+            <button
+              className="px-3 py-2 mx-auto text-white bg-blue-500 rounded-md hover:bg-blue-600 hover:text-gray-200"
+              onClick={copyClipBoard(passwordRef.current)}
+            >
+              Copy Password
+            </button>
           </div>
         </div>
       </div>
@@ -234,4 +232,4 @@ const Container = props => {
   )
 }
 
-export { Container }
+export { PwdContainer }

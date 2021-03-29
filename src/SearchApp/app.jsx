@@ -120,7 +120,7 @@ const App = () => {
         // <SkeletonLoader hidden={visibility} />
       )}
       <Footer />
-      <div className="h-1/5 overflow-auto my-4">
+      <div className="my-4 overflow-auto h-1/5">
         <Body />
       </div>
     </>

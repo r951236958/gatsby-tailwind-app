@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import PwdGen from '../components/PwdGen'
+// import PwdGen from '../components/PwdGen'
+import PwdApp from 'components/PwdApp'
 // import App from '../PwdApp/App'
       
 const PasswordGeneratorPage = () => {
@@ -13,7 +14,7 @@ const PasswordGeneratorPage = () => {
           keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
           title={title}
         />
-        <PwdGen />
+        <PwdApp />
       </Layout>
     )
 }

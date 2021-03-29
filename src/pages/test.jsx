@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../components/Layout"
-import PwdApp from '../PwdApp/App'
-// import PasswordGenerator from "../components/PasswordGenerator"
-import SEO from "../components/SEO"
+import Layout from "components/Layout"
+// import PwdApp from '../PwdApp/App'
+import PwdApp from 'components/PasswordGenerator'
+import SEO from "components/SEO"
 
 const TestPage = () => {
   const title = "Test Page"

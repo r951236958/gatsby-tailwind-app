@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
+import MoonStarIcon from './MoonStarIcon'
+import SunIcon from './SunIcon'
 
-function Toggle({
+function Toggle2({
   className = '',
   defaultChecked = false,
   name = '',
   onChange = () => {},
-  icon,
   ...newProps
 }) {
   const [checked, setChecked] = useState(false)
@@ -15,11 +16,11 @@ function Toggle({
   let backgroundClass =
     'absolute left-0 top-0 h-full w-full rounded-full shadow-inner border-2 border-gray-400'
   if (checked) {
-    backgroundClass += ' bg-green-400'
-    togglerClass += ' transform translate-x-full bg-gray-200 border-green-400'
+    backgroundClass += ' bg-gray-900'
+    togglerClass += ' transform translate-x-full bg-gray-900'
   } else {
-    backgroundClass += ' bg-white'
-    togglerClass += ' bg-gray-200 border-gray-100'
+    backgroundClass += ' bg-blue-300'
+    togglerClass += ' bg-blue-300'
   }
   return (
     <div className="flex items-center">
@@ -40,11 +41,11 @@ function Toggle({
       >
         <span className={backgroundClass} />
         <span className={togglerClass}>
-          {checked ? icon && <span className="text-sm text-gray-800">{icon}</span> : null}
+          {checked ? <MoonStarIcon /> : <SunIcon />}
         </span>
       </label>
     </div>
   )
 }
 
-export default Toggle
+export default Toggle2

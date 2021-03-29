@@ -2,22 +2,29 @@ import React from 'react'
 import Layout from '../components/Layout'
 import LinkList from '../components/LinkList'
 import SEO from '../components/SEO'
+import Toggle from 'components/Toggle'
+import Toggle2 from 'components/Toggle2'
 // import ThemeToggle from "../components/ThemeToggle"
 // import SwitchDarkMode from "../components/SwitchDarkMode"
 import { linkList } from '../config'
 import catAndHumanIllustration from '../images/cat-and-human-illustration.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 
 function IndexPage() {
   const title = 'Home'
+ const HELLO = JSON.stringify(process.env.NODE_ENV)
 
+ console.log('process.env.NODE_ENV:', HELLO)
   return (
     <Layout title={title}>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title={title}
       />
-      
+      <Toggle name="toggle" icon={<FontAwesomeIcon icon={faCheck} />} />
+      <Toggle2 name="toggle2" />
       <div className="mx-auto my-4">
         {linkList.map((items) => (
           <LinkList key={items.id} items={items} />

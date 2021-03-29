@@ -82,10 +82,7 @@ export default function Footer() {
                       className="inline-flex items-center justify-center space-x-2 text-base font-normal"
                       href="/"
                     >
-                      <TwitterIcon
-                        className="w-6 h-6 text-blue-400 fill-current hover:text-blue-500"
-                        aria-hidden="true"
-                      />
+                      <i className="fab fa-twitter fa-lg" />
 
                       <span className="text-white hover:text-gray-200">
                         Twitter
@@ -97,10 +94,7 @@ export default function Footer() {
                       className="inline-flex items-center justify-center space-x-2 text-base font-normal"
                       href="/"
                     >
-                      <InstagramIcon
-                        className="w-6 h-6 bg-white rounded-md fill-current"
-                        aria-hidden="true"
-                      />
+                      <i className="fab fa-instagram fa-lg" />
 
                       <span className="text-white hover:text-gray-200">
                         Instagram
@@ -112,10 +106,7 @@ export default function Footer() {
                       href="/"
                       className="inline-flex items-center justify-center space-x-2 text-base font-normal"
                     >
-                      <FacebookIcon
-                        className="w-6 h-6 text-blue-600 bg-white border border-white rounded-full fill-current hover:text-blue-700"
-                        aria-hidden="true"
-                      />
+                      <i className="fab fa-facebook-f fa-lg" />
                       <span className="text-white hover:text-gray-200">
                         Facebook
                       </span>

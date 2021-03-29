@@ -1,16 +1,13 @@
 import React from "react"
-import Display from "./Display"
-import Header from "./Header"
-import Tools from "./Tools"
+import Main from './components/Main'
+// import Tools from "./Tools"
 
-const Main = () => {
+const App = () => {
   return (
     <>
-      <Header />
-      <Display />
-      <Tools />
+      <Main />
     </>
   )
 }
 
-export default Main
+export default App

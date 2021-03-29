@@ -1,6 +1,12 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  corePlugins: {
+    ringWidth: false,
+    ringColor: false,
+    ringOffsetWidth: false,
+    ringOffsetColor: false,
+  },
   purge: {
     enabled: true, // 開發環境預設關閉，NODE_ENV設置production時啟用
     // preserveHtmlElements: false, // 保留HTML元素，預設true，如需禁用此功能設置為false
@@ -20,9 +26,14 @@ module.exports = {
         '-1': '-1',
       },
       spacing: {
+        '10px': '10px',
+        '20px': '20px',
+        '60px': '60px',
+        '210px': '210px',
         120: '120px',
         100: '100px',
         200: '200px',
+        210: '210px',
         300: '300px',
         400: '400px',
         500: '500px',
@@ -140,7 +151,4 @@ module.exports = {
     },
   },
   plugins: [require('@tailwindcss/forms')],
-  corePlugins: {
-    ringWidth: false,
-  },
 }
