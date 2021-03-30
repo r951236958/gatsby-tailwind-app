@@ -6,8 +6,7 @@ import Button from 'components/Button'
 import Dropdown from 'components/Dropdowns/Dropdown1'
 import ImageModal from 'components/ImageModal'
 import OpenModalButton from 'components/OpenModalButton'
-import Modal from 'components/ModalDemo'
-import Modal1 from 'components/Modals/Modal1'
+import Modal from 'components/Modals/Modal1'
 
 
 const Page3 = () => {
@@ -90,38 +89,28 @@ const Page3 = () => {
         />
       </div>
       <div className="w-full">
-        <Button size="sm" text="Open Modal" onClick={handleShowModal} />
+        <OpenModalButton handlClick={() => handlOpenModal(true)}>
+          Open modal
+        </OpenModalButton>
+        <Button size="xl" text="Open Modal" onClick={setModalOpen} />
 
-        <Modal1
-          title="Wait!"
-          text="Are you sure you want to delete this item?"
-          type="warning"
-          showCancelButton
-          confirmButtonText="Yes!"
-          cancelButtonText="No"
-        />
+        <Modal
+          shown={modalShown}
+          close={() => {
+            toggleModal(false)
+          }}
+        >
+          <div className="text-xl dark:text-gray-800">
+            Look! I&apos;m inside the modal!
+          </div>
+        </Modal>
+
+        <ImageModal isOpen={isOpen} handleClose={handleClose}>
+          <div className="flex items-center justify-center w-full h-full">
+            <div className="text-xl text-blue-500">Hello World!</div>
+          </div>
+        </ImageModal>
       </div>
-      <OpenModalButton handlClick={() => handlOpenModal(true)}>
-        Open modal
-      </OpenModalButton>
-      <Button size="xl" text="Open Modal" onClick={setModalOpen} />
-
-      <Modal
-        shown={modalShown}
-        close={() => {
-          toggleModal(false)
-        }}
-      >
-        <div className="text-xl dark:text-gray-800">
-          Look! I&apos;m inside the modal!
-        </div>
-      </Modal>
-
-      <ImageModal isOpen={isOpen} handleClose={handleClose}>
-        <div className="flex items-center justify-center w-full h-full">
-          <div className="text-xl text-blue-500">Hello World!</div>
-        </div>
-      </ImageModal>
     </Layout>
   )
 }
