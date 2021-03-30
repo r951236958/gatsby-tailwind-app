@@ -1,28 +1,27 @@
-import React, { useEffect, useState, useRef } from 'react'
-// import {notes} from './notes'
-import {usernames} from './usernames'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
-
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import ListGroup from 'components/ListGroup'
+import React, { useEffect, useRef, useState } from 'react'
+// import {notes} from './notes'
+import { usernames } from './usernames'
 
-const UseRefEx = (props) => {
+const UseRefEx = () => {
   const list = usernames
   const [view, setView] = useState(false)
-  const [value, setValue] = useState('')
+  const [inputValue, setInputValue] = useState('')
   const input = useRef()
 
-  const handleSelect = (value) => {
-    if (typeof value === 'string' && value.length > 0) {
-      setValue(value)
+  const handleSelect = (inputValue) => {
+    if (typeof inputValue === 'string' && inputValue.length > 0) {
+      setInputValue(inputValue)
     }
   }
 
   useEffect(() => {
-    if (typeof value === 'string' && value.length > 0) {
+    if (typeof inputValue === 'string' && inputValue.length > 0) {
       setView(true)
     }
-  }, [value])
+  }, [inputValue])
 
   useEffect(() => {
     if (view) {
@@ -47,7 +46,7 @@ const UseRefEx = (props) => {
         className="mb-5"
         onSelect={handleSelect}
         selectedLabel="Copied"
-        selected={value}
+        selected={inputValue}
       />
 
       <hr />
@@ -62,7 +61,7 @@ const UseRefEx = (props) => {
           readOnly
           ref={input}
           type="text"
-          value={value}
+          value={inputValue}
           className="form-control"
         />
       </div>
