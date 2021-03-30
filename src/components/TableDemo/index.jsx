@@ -3,7 +3,7 @@ import items from './data'
 // import items from '../../../acnh_data'
 import { useTable, useFilters } from 'react-table'
 
-
+// 圖片更新需上傳至 => https://cloudinary.com/
 const TableDemo = () => {
   const [filterInput, setFilterInput] = useState('') // 篩選狀態
 
@@ -11,7 +11,7 @@ const TableDemo = () => {
   const columns = useMemo(() => [
     { Header: '藝術品', accessor: 'col1' },
     { Header: 'Image', accessor: 'col2' },
-    // { Header: 'Real', accessor: 'real' },
+    // { Header: '說明', accessor: 'col3' },
     // { Header: 'Fake', accessor: 'fake' },
     // { Header: '備註', accessor: 'note' },
   ])
