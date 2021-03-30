@@ -6,7 +6,7 @@ import Toggle from 'components/Toggle'
 import Toggle2 from 'components/Toggle2'
 // import ThemeToggle from "../components/ThemeToggle"
 // import SwitchDarkMode from "../components/SwitchDarkMode"
-import { linkList } from '../config'
+// import { linkList } from '../config'
 import catAndHumanIllustration from '../images/cat-and-human-illustration.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
@@ -23,13 +23,12 @@ function IndexPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title={title}
       />
-      <Toggle name="toggle" icon={<FontAwesomeIcon icon={faCheck} />} />
-      <Toggle2 name="toggle2" />
-      <div className="mx-auto my-4">
+      
+      {/* <div className="mx-auto my-4">
         {linkList.map((items) => (
           <LinkList key={items.id} items={items} />
         ))}
-      </div>
+      </div> */}
       <section className="text-center">
         <img
           alt="Cat and human sitting on a couch"
@@ -54,12 +53,16 @@ function IndexPage() {
           , a utility-first CSS framework.
         </p>
       </section>
-      <div>
-        <button className="px-4 py-2 text-gray-100 bg-blue-500 rounded-md">
-          <span className="w-6 h-6 text-gray-100 material-icons">home</span>
+      <div className="flex flex-row items-center justify-center w-full p-2 my-4 space-x-4">
+
+      <Toggle name="toggle" icon={<FontAwesomeIcon icon={faCheck} />} />
+      <Toggle2 name="toggle2" />
+      
+        <button className="inline-flex items-center px-4 py-2 text-gray-100 bg-blue-500 rounded-md">
+          <span className="w-6 h-6 mr-2 text-gray-100 material-icons">home</span>
           Button
         </button>
-        <i className="far fa-heart">heart</i>
+        <i className="far fa-heart" />
         <i className="material-icons">home</i>
         <span className="material-icons">light_mode</span>
       </div>

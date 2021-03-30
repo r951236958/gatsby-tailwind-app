@@ -75,3 +75,5 @@ yarn-error.log
 .netlify
 
 credentials/*
+
+*.backup.js

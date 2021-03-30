@@ -33,7 +33,7 @@ const Layout = ({ children, title }) => {
         <TopBar siteTitle={site.siteMetadata.title} />
 
         <main>
-          <div className="w-full max-w-screen-lg p-4 mx-auto md:p-6">
+          <div className="w-full max-w-screen-lg min-h-screen p-4 mx-auto md:p-6">
             <Title>{title}</Title>
             {children}
           </div>

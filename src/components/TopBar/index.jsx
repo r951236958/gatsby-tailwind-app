@@ -3,7 +3,7 @@ import { Link, navigate } from "gatsby"
 import firebase from "gatsby-plugin-firebase"
 import PropTypes from "prop-types"
 import React, { useEffect, useState } from 'react'
-import { menuList } from "../../config"
+import { navLinks } from "../../config"
 import { getUser, isLoggedIn, logout } from "../../utils/auth"
 import DarkModeToggle from '../DarkModeToggle'
 export default function TopBar({ siteTitle }) {
@@ -122,15 +122,15 @@ export default function TopBar({ siteTitle }) {
               <div className="hidden md:block md:ml-6">
                 <div className="flex space-x-4">
                   {/* Navbar Links */}
-                  {menuList.map((items, i) => (
+                  {navLinks.map((items, i) => (
                     <Link
                       key={`navlink-${i}`}
                       activeClassName="active"
                       activeStyle={{ color: '#f3e37' }}
                       className="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-900 active:bg-gray-900 hover:bg-opacity-40 active:bg-opacity-40 hover:text-white active:text-white hover:no-underline"
-                      to={items.link}
+                      to={items.path}
                     >
-                      {items.name}
+                      {items.title}
                     </Link>
                   ))}
                 </div>
@@ -149,14 +149,14 @@ export default function TopBar({ siteTitle }) {
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {/* Mobile Menu Items */}
-            {menuList.map((items, i) => (
+            {navLinks.map((items, i) => (
               <Link
                 key={`mobile-menulink-${i}`}
                 activeClassName="active"
                 className="block px-3 py-2 text-base font-medium text-gray-300 bg-gray-700 rounded-md hover:no-underline hover:bg-gray-800 active:bg-gray-800 hover:text-white active:text-white"
-                to={items.link}
+                to={items.path}
               >
-                {items.name}
+                {items.title}
               </Link>
             ))}
           </div>

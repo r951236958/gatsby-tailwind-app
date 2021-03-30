@@ -1,5 +1,10 @@
 import React from 'react'
 
+export const navLinks = [
+  {title: "Home", path: "/",},
+  {title: "ACNH", path: "/acnh",},
+]
+
 export const menuList = [
   {
     name: "Home",
