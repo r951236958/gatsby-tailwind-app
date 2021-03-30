@@ -27,8 +27,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439014/Gatsby/acnh/art02_xsdcei.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439014/Gatsby/acnh/art02_xsdcei.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109628/Gatsby/acnh/art02_pqtiij.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109628/Gatsby/acnh/art02_pqtiij.jpg"
           alt="俊俏的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -63,8 +63,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439016/Gatsby/acnh/art04_fjiwxy.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439016/Gatsby/acnh/art04_fjiwxy.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109628/Gatsby/acnh/art04_sewbhb.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109628/Gatsby/acnh/art04_sewbhb.jpg"
           alt="優美的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -81,8 +81,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439015/Gatsby/acnh/art05_lhzf74.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439015/Gatsby/acnh/art05_lhzf74.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art05_begiad.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art05_begiad.jpg"
           alt="充滿母愛的雕塑"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -117,8 +117,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439017/Gatsby/acnh/art07_fnxx5c.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439017/Gatsby/acnh/art07_fnxx5c.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art07_w38hua.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art07_w38hua.jpg"
           alt="出乎意料的雕塑"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -135,8 +135,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439016/Gatsby/acnh/art08_vggijf.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439016/Gatsby/acnh/art08_vggijf.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art08_nt1n4o.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art08_nt1n4o.jpg"
           alt="勇敢的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -153,8 +153,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439017/Gatsby/acnh/art09_u2tnvq.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439017/Gatsby/acnh/art09_u2tnvq.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art09_nn2kxn.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art09_nn2kxn.jpg"
           alt="動人的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -225,8 +225,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439018/Gatsby/acnh/art13_pf7j4t.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439018/Gatsby/acnh/art13_pf7j4t.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art13_lxzh63.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art13_lxzh63.jpg"
           alt="婀娜的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -243,8 +243,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439019/Gatsby/acnh/art14_kzfenp.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439019/Gatsby/acnh/art14_kzfenp.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art14_bdqisw.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art14_bdqisw.jpg"
           alt="學術性的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -279,8 +279,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439020/Gatsby/acnh/art16_js5rgz.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439020/Gatsby/acnh/art16_js5rgz.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art16_ub4qi0.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art16_ub4qi0.jpg"
           alt="平靜的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -315,8 +315,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439020/Gatsby/acnh/art18_s57fqy.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439020/Gatsby/acnh/art18_s57fqy.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art18_jcpvpl.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art18_jcpvpl.jpg"
           alt="強壯的雕塑"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -351,8 +351,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439020/Gatsby/acnh/art20_ppoxjv.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439020/Gatsby/acnh/art20_ppoxjv.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art20_xzpdum.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art20_xzpdum.jpg"
           alt="有名的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -369,8 +369,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439021/Gatsby/acnh/art21_yb1hz6.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439021/Gatsby/acnh/art21_yb1hz6.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art21_uiwfmp.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art21_uiwfmp.jpg"
           alt="有趣的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -387,8 +387,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439022/Gatsby/acnh/art22_jpjb4g.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439022/Gatsby/acnh/art22_jpjb4g.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art22_as2sqn.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art22_as2sqn.jpg"
           alt="武士的雕刻"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -423,8 +423,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439021/Gatsby/acnh/art24_ozld4f.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439021/Gatsby/acnh/art24_ozld4f.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617110647/Gatsby/acnh/art24_muf3kj.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617110647/Gatsby/acnh/art24_muf3kj.jpg"
           alt="漂亮的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -477,8 +477,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439023/Gatsby/acnh/art27_mjizrz.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439023/Gatsby/acnh/art27_mjizrz.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art27_dnl6zn.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art27_dnl6zn.jpg"
           alt="石頭顱雕塑"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -513,8 +513,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439023/Gatsby/acnh/art29_l3xi38.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439023/Gatsby/acnh/art29_l3xi38.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art29_kctxio.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art29_kctxio.jpg"
           alt="神祕的雕塑"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -549,8 +549,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439023/Gatsby/acnh/art31_uwpdij.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439023/Gatsby/acnh/art31_uwpdij.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439023/v1617109630/Gatsby/acnh/art31_kjyi5b.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439023/v1617109630/Gatsby/acnh/art31_kjyi5b.jpg"
           alt="神聖的雕塑"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -569,8 +569,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439024/Gatsby/acnh/art32_oclbrx.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439024/Gatsby/acnh/art32_oclbrx.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art32_ducdwv.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art32_ducdwv.jpg"
           alt="端莊的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -587,8 +587,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439024/Gatsby/acnh/art33_jn8o1i.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439024/Gatsby/acnh/art33_jn8o1i.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art33_ni17jz.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art33_ni17jz.jpg"
           alt="粗野的名畫右半邊"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -605,8 +605,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439014/Gatsby/acnh/art34_rukdzp.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439014/Gatsby/acnh/art34_rukdzp.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art34_ml50mi.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art34_ml50mi.jpg"
           alt="粗野的名畫左半邊"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -623,8 +623,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439014/Gatsby/acnh/art35_ztzrzg.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439014/Gatsby/acnh/art35_ztzrzg.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art35_lvg8tc.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art35_lvg8tc.jpg"
           alt="細緻的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -641,8 +641,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439015/Gatsby/acnh/art36_et8q0b.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439015/Gatsby/acnh/art36_et8q0b.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art36_vawpam.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art36_vawpam.jpg"
           alt="線索的雕塑"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -659,8 +659,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439015/Gatsby/acnh/art37_axhng8.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439015/Gatsby/acnh/art37_axhng8.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art37_yq1skn.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art37_yq1skn.jpg"
           alt="美麗的雕塑"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -677,8 +677,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1617106798/Gatsby/acnh/art38_juf85n.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1617106798/Gatsby/acnh/art38_juf85n.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art38_dc6w8d.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art38_dc6w8d.jpg"
           alt="肅穆的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -713,8 +713,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439019/Gatsby/acnh/art40_mu5jud.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439019/Gatsby/acnh/art40_mu5jud.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art40_dyuilf.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art40_dyuilf.jpg"
           alt="英挺的雕塑"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -731,8 +731,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439019/Gatsby/acnh/art41_mpurer.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439019/Gatsby/acnh/art41_mpurer.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art41_r8zidt.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art41_r8zidt.jpg"
           alt="遠古的雕塑"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
@@ -767,8 +767,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439021/Gatsby/acnh/art43_qt6nzv.png"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439021/Gatsby/acnh/art43_qt6nzv.png"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art43_ottn57.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art43_ottn57.jpg"
           alt="驚人的名畫"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
