@@ -549,8 +549,8 @@ export default [
       <figure className="relative">
         <ModalImage
           className="small-img"
-          small="https://res.cloudinary.com/reactappforme/image/upload/v1616439023/v1617109630/Gatsby/acnh/art31_kjyi5b.jpg"
-          large="https://res.cloudinary.com/reactappforme/image/upload/v1616439023/v1617109630/Gatsby/acnh/art31_kjyi5b.jpg"
+          small="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art31_kjyi5b.jpg"
+          large="https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art31_kjyi5b.jpg"
           alt="神聖的雕塑"
         />
         <div className="px-2 py-2 text-white bg-black bg-opacity-50 rounded likes">
