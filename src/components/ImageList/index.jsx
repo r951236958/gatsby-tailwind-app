@@ -72,7 +72,7 @@ const ImageList = ({ OnSubmit, visibility }) => {
         </div>
       </form>
       <StyledTable>
-        <table className="w-2/3 border border-gray-700 rounded-md table-auto dark:border-gray-100">
+        <table className="w-full border border-gray-700 rounded-md table-auto lg:w-2/3 dark:border-gray-100">
           <thead>
             <tr className="divide-gray-700 dark:divide-gray-100 divide-x-1">
               <th className="w-4/12">Name</th>
