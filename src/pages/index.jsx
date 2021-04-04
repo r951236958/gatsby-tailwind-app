@@ -1,34 +1,24 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import LinkList from '../components/LinkList'
+// import LinkList from '../components/LinkList'
 import SEO from '../components/SEO'
-import Toggle from 'components/Toggle'
-import Toggle2 from 'components/Toggle2'
-// import ThemeToggle from "../components/ThemeToggle"
-// import SwitchDarkMode from "../components/SwitchDarkMode"
-// import { linkList } from '../config'
 import catAndHumanIllustration from '../images/cat-and-human-illustration.svg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
-
-function IndexPage() {
+function Index() {
   const title = 'Home'
- const HELLO = JSON.stringify(process.env.NODE_ENV)
+  const HELLO = JSON.stringify(process.env.NODE_ENV)
 
- console.log('process.env.NODE_ENV:', HELLO)
+  console.log('process.env.NODE_ENV:', HELLO)
+
   return (
     <Layout title={title}>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title={title}
       />
-      
-      {/* <div className="mx-auto my-4">
-        {linkList.map((items) => (
-          <LinkList key={items.id} items={items} />
-        ))}
-      </div> */}
+
       <section className="text-center">
         <img
           alt="Cat and human sitting on a couch"
@@ -54,12 +44,10 @@ function IndexPage() {
         </p>
       </section>
       <div className="flex flex-row items-center justify-center w-full p-2 my-4 space-x-4">
-
-      <Toggle name="toggle" icon={<FontAwesomeIcon icon={faCheck} />} />
-      <Toggle2 name="toggle2" />
-      
         <button className="inline-flex items-center px-4 py-2 text-gray-100 bg-blue-500 rounded-md">
-          <span className="w-6 h-6 mr-2 text-gray-100 material-icons">home</span>
+          <span className="w-6 h-6 mr-2 text-gray-100 material-icons">
+            home
+          </span>
           Button
         </button>
         <i className="far fa-heart" />
@@ -70,4 +58,4 @@ function IndexPage() {
   )
 }
 
-export default IndexPage
+export default Index

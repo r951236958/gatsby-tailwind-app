@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import TableDemo from '../components/TableDemo'
+import ImageList from '../components/ImageList'
 
 function ACNH() {
 const title = '動森'
@@ -12,7 +12,7 @@ const title = '動森'
         title={title}
       />
 
-      <TableDemo />
+      <ImageList />
     </Layout>
   )
 }

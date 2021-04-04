@@ -1,5 +1,6 @@
 import React from 'react'
 import ModalImage from 'react-modal-image'
+// import ImageModal from 'components/ImageModal'
 
 export default [
   {

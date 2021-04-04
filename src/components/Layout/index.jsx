@@ -37,10 +37,8 @@ const Layout = ({ children, title }) => {
             <Title>{title}</Title>
             {children}
           </div>
-          {/* </DrawerLeft> */}
-          <Footer />
-          
         </main>
+        <Footer />
       </div>
     </>
   )

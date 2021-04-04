@@ -23,6 +23,7 @@ module.exports = {
         pages: path.join(__dirname, `src/pages`),
         components: path.join(__dirname, `src/components`),
         utils: path.join(__dirname, `src/utils`),
+        images: path.join(__dirname, `src/images`),
       },
     },
     {
@@ -44,7 +45,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.green['500'],
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`,
+        icon: `src/images/icon.png`,
       },
     },
     {
@@ -83,7 +84,7 @@ module.exports = {
       resolve: `gatsby-plugin-firebase`,
       options: {
         credentials: {
-          apiKey: config.GATSBY_FIREBASE_API_KEY,
+          apiKey: process.env.GATSBY_FIREBASE_API_KEY,
           authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
           databaseURL: process.env.GATSBY_FIREBASE_DATABASE_URL,
           projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,
@@ -95,6 +96,14 @@ module.exports = {
     },
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-use-dark-mode`,
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+        spreadsheetId: process.env.GATSBY_GOOGLE_SHEETS_ID,
+        worksheetTitle: 'Data',
+        credentials: require('./credentials/client_secret.json'),
+      },
+    },
     // {
     //   resolve: `gatsby-source-mongodb`,
     //   options: {
@@ -109,9 +118,12 @@ module.exports = {
     //       password: process.env.GATSBY_DB_PASSWORD,
     //     },
     //     extraParams: {
-    //       replicaSet: 'Main-shard-0',
-    //       ssl: true,
+    //       // authSource=admin&replicaSet=atlas-p1ohd1-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true
     //       authSource: 'admin',
+    //       replicaSet: 'atlas-p1ohd1-shard-0',
+    //       readPreference: 'primary',
+    //       appname: 'MongoDB Compass',
+    //       ssl: true,
     //       retryWrites: true,
     //     },
     //   },

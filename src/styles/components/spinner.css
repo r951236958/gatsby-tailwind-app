@@ -1,4 +1,4 @@
-einput:focus {
+input:focus {
   width: 80%;
   outline: none;
 }
@@ -125,7 +125,7 @@ figure:hover > div.likes {
   margin: 0 auto;
   width: 15%;
   height: 15%;
-  background-color: #6b46c1;
+  background-color: #f2be2b;
   border-radius: 100%;
   -webkit-animation: sk-fading-circle-delay 1.2s infinite ease-in-out both;
   animation: sk-fading-circle-delay 1.2s infinite ease-in-out both;

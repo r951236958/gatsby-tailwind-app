@@ -1,0 +1,260 @@
+[
+  {
+    "id": "1",
+    "name": "似曾相識的雕塑",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439014/Gatsby/acnh/art01_ddn3ib.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "2",
+    "name": "俊俏的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109628/Gatsby/acnh/art02_pqtiij.jpg",
+    "note": "假貨是八字眉"
+  },
+  {
+    "id": "3",
+    "name": "偉大的雕塑",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439013/Gatsby/acnh/art03_nzj2mk.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "4",
+    "name": "優美的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109628/Gatsby/acnh/art04_sewbhb.jpg",
+    "note": "假貨獵人只有1個"
+  },
+  {
+    "id": "5",
+    "name": "充滿母愛的雕塑",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art05_begiad.jpg",
+    "note": "吐舌頭的是假的"
+  },
+  {
+    "id": "6",
+    "name": "光線的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439016/Gatsby/acnh/art06_gyyzgo.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "7",
+    "name": "出乎意料的雕塑",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art07_w38hua.jpg",
+    "note": "真品中間沒有把手"
+  },
+  {
+    "id": "8",
+    "name": "勇敢的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art08_nt1n4o.jpg",
+    "note": "妹妹頭是假貨"
+  },
+  {
+    "id": "9",
+    "name": "動人的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art09_nn2kxn.jpg",
+    "note": "假貨右上角沒有樹"
+  },
+  {
+    "id": "10",
+    "name": "厲害的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439016/Gatsby/acnh/art10_c9wlir.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "11",
+    "name": "名貴的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439019/Gatsby/acnh/art11_ns7jkj.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "12",
+    "name": "和煦的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439017/Gatsby/acnh/art12_offmiy.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "13",
+    "name": "婀娜的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art13_lxzh63.jpg",
+    "note": "真品的貂比較白"
+  },
+  {
+    "id": "14",
+    "name": "學術性的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art14_bdqisw.jpg",
+    "note": "右上角有污漬的是假貨"
+  },
+  {
+    "id": "15",
+    "name": "常見的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439018/Gatsby/acnh/art15_ns48mm.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "16",
+    "name": "平靜的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art16_ub4qi0.jpg",
+    "note": "真品倒出來的比較細"
+  },
+  {
+    "id": "17",
+    "name": "強健的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439020/Gatsby/acnh/art17_jboedj.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "18",
+    "name": "強壯的雕塑",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art18_jcpvpl.jpg",
+    "note": "假貨手上有戴手錶"
+  },
+  {
+    "id": "19",
+    "name": "很好的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439021/Gatsby/acnh/art19_wxgofm.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "20",
+    "name": "有名的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109629/Gatsby/acnh/art20_xzpdum.jpg",
+    "note": "蒙娜麗莎沒有眉毛"
+  },
+  {
+    "id": "21",
+    "name": "有趣的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art21_uiwfmp.jpg",
+    "note": "真品胸前有花"
+  },
+  {
+    "id": "22",
+    "name": "武士的雕刻",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art22_as2sqn.jpg",
+    "note": "有鏟子的是假貨"
+  },
+  {
+    "id": "23",
+    "name": "沉沒的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439022/Gatsby/acnh/art23_ahgh0i.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "24",
+    "name": "漂亮的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617110647/Gatsby/acnh/art24_muf3kj.jpg",
+    "note": "真品耳環是圓的"
+  },
+  {
+    "id": "25",
+    "name": "熱鬧的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439022/Gatsby/acnh/art25_sbl1w7.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "26",
+    "name": "珍貴的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439022/Gatsby/acnh/art26_eg2wwn.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "27",
+    "name": "石頭顱雕塑",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art27_dnl6zn.jpg",
+    "note": "微笑的是假貨"
+  },
+  {
+    "id": "28",
+    "name": "磅礡的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439023/Gatsby/acnh/art28_kbesja.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "29",
+    "name": "神祕的雕塑",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art29_kctxio.jpg",
+    "note": "真品沒有耳環"
+  },
+  {
+    "id": "30",
+    "name": "神秘的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439024/Gatsby/acnh/art30_b4e1h1.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "31",
+    "name": "神聖的雕塑",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art31_kjyi5b.jpg",
+    "note": "真品的右腳在前(我們的視角看是左邊那隻腳)"
+  },
+  {
+    "id": "32",
+    "name": "端莊的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art32_ducdwv.jpg",
+    "note": "真品面朝右，人物占比小"
+  },
+  {
+    "id": "33",
+    "name": "粗野的名畫右半邊",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art33_ni17jz.jpg",
+    "note": "真品：綠色風神"
+  },
+  {
+    "id": "34",
+    "name": "粗野的名畫左半邊",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art34_ml50mi.jpg",
+    "note": "真品：白色雷神"
+  },
+  {
+    "id": "35",
+    "name": "細緻的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art35_lvg8tc.jpg",
+    "note": "真品葉子是藍色"
+  },
+  {
+    "id": "36",
+    "name": "線索的雕塑",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109630/Gatsby/acnh/art36_vawpam.jpg",
+    "note": "真品：灰色石碑"
+  },
+  {
+    "id": "37",
+    "name": "美麗的雕塑",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art37_yq1skn.jpg",
+    "note": "真品：沒有項鍊"
+  },
+  {
+    "id": "38",
+    "name": "肅穆的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art38_dc6w8d.jpg",
+    "note": "真品：後面門口的人手是貼著的"
+  },
+  {
+    "id": "39",
+    "name": "舒適的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439019/Gatsby/acnh/art39_yrbee7.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "40",
+    "name": "英挺的雕塑",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art40_dyuilf.jpg",
+    "note": "真品：手上沒有夾書"
+  },
+  {
+    "id": "41",
+    "name": "遠古的雕塑",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art41_r8zidt.jpg",
+    "note": "真品：耳朵沒有天線、沒有眼睛"
+  },
+  {
+    "id": "42",
+    "name": "閃爍的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1616439020/Gatsby/acnh/art42_ubwtr3.png",
+    "note": "只有真品"
+  },
+  {
+    "id": "43",
+    "name": "驚人的名畫",
+    "img": "https://res.cloudinary.com/reactappforme/image/upload/v1617109631/Gatsby/acnh/art43_ottn57.jpg",
+    "note": "真品：有帽子"
+  }
+]

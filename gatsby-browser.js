@@ -7,3 +7,7 @@ import 'react-toggle/style.css'
 import './src/styles/global.css'
 import './src/styles/index.scss'
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
+
+import 'firebase/auth'
+import 'firebase/firestore'
+import 'firebase/functions'

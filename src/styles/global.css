@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "components/spinner.css";
-@import "components/tooltip.css";
-@import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+@import 'components/spinner.css';
+@import 'components/tooltip.css';
+@import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
 .theme-light {
   --primary: #f8f8f8;
@@ -12,6 +12,10 @@
   --text-main: #0d0106;
   --text-secondary: #454e56;
   --accent: #009ffd;
+  --color-primary: #0060df;
+  --color-secondary: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
 }
 .theme-dark {
   --primary: #12181b;
@@ -19,11 +23,34 @@
   --text-main: #eaeaea;
   --text-secondary: #b8b8b9;
   --accent: #fc7753;
+  --color-primary: #17ed90;
+  --color-secondary: #243133;
+  --color-accent: #12cdea;
+  --font-color: #ffffff;
 }
+main.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: var(--color-secondary);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.container div {
+  color: var(--font-color);
+}
+.container button {
+  color: var(--font-color);
+  background: var(--color-primary);
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+} */
 /* * {
   box-sizing: border-box;
 } */
-
 body.light-mode {
   /* background-color: #fff;
   color: #333;
@@ -73,4 +100,9 @@ body.dark-mode {
 /* When the darkmode class is applied, set the pseudo element position to 0 */
 .darkmode::before {
   transform: translateX(0);
+}
+
+#acnh-art > table > input,
+input[type="text"] {
+  @apply dark:bg-transparent focus:outline-none;
 }
