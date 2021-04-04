@@ -96,14 +96,14 @@ module.exports = {
     },
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-use-dark-mode`,
-    {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-        spreadsheetId: process.env.GATSBY_GOOGLE_SHEETS_ID,
-        worksheetTitle: 'Data',
-        credentials: require('./credentials/client_secret.json'),
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-google-sheets',
+    //   options: {
+    //     spreadsheetId: process.env.GATSBY_GOOGLE_SHEETS_ID,
+    //     worksheetTitle: 'Data',
+    //     credentials: require('./credentials/client_secret.json'),
+    //   },
+    // },
     // {
     //   resolve: `gatsby-source-mongodb`,
     //   options: {
