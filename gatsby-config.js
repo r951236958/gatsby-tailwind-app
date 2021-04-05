@@ -7,8 +7,6 @@ const fullConfig = resolveConfig(tailwindConfig)
 const path = require(`path`)
 // const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
-const config = require('gatsby-plugin-config')
-
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Tailwind`,
@@ -23,7 +21,10 @@ module.exports = {
         pages: path.join(__dirname, `src/pages`),
         components: path.join(__dirname, `src/components`),
         utils: path.join(__dirname, `src/utils`),
+        hooks: path.join(__dirname, `src/hooks`),
+        styles: path.join(__dirname, `src/styles`),
         images: path.join(__dirname, `src/images`),
+        node_modules: path.join(__dirname, `node_modules`),
       },
     },
     {

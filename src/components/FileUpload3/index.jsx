@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React from 'react'
 // import { StaticImage } from 'gatsby-plugin-image'
 // import Dropzone from '../Dropzone'
 import useFileHandlers from '../../hooks/useFileHandlers'
@@ -21,24 +21,24 @@ const FileUpload3 = () => {
 
   // const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop })
 
-  const [selectedFile, setSelectedFile] = useState([])
+  // const [selectedFile, setSelectedFile] = useState([])
 
-  function onFileUpload(event) {
-    event.preventDefault()
+  // function onFileUpload(event) {
+  //   event.preventDefault()
 
-    // Create an instance of FileReader API
-    let file_reader = new FileReader()
-    // Get the actual file itself
-    let file = event.target.files[0]
-    file_reader.onload = () => {
-      // After uploading the file
-      // appending the file to our state array
-      // set the object keys and values accordingly
-      setSelectedFile([...selectedFile, { uploaded_file: file_reader.result }])
-    }
-    // reading the actual uploaded file
-    file_reader.readAsDataURL(file)
-  }
+  //   // Create an instance of FileReader API
+  //   let file_reader = new FileReader()
+  //   // Get the actual file itself
+  //   let file = event.target.files[0]
+  //   file_reader.onload = () => {
+  //     // After uploading the file
+  //     // appending the file to our state array
+  //     // set the object keys and values accordingly
+  //     setSelectedFile([...selectedFile, { uploaded_file: file_reader.result }])
+  //   }
+  //   // reading the actual uploaded file
+  //   file_reader.readAsDataURL(file)
+  // }
 
   return (
     <>

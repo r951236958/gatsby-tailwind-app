@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState } from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import Button from 'components/Button'
@@ -15,7 +15,6 @@ const Page3 = () => {
   // const [fruit, setFruit] = useState(undefined)
   const [isOpen, setIsOpen] = useState(false)
   const [modalShown, toggleModal] = useState(false)
-  const [show, setShow] = useState(false)
 
   const handlOpenModal =(open) => {
     console.log('close modal')
@@ -28,10 +27,6 @@ const Page3 = () => {
 
   const setModalOpen = () => {
     toggleModal(!modalShown)
-  }
-
-  const handleShowModal = () => {
-    setShow(!show)
   }
 
   return (

@@ -109,6 +109,7 @@ const App = () => {
 
   return (
     <>
+    <div id="search-app">
       <Header />
       <SearchBar OnSubmit={formSubmit} visibility={spin} />
       {visibility === 'no' ? (
@@ -123,6 +124,7 @@ const App = () => {
       <div className="my-4 overflow-auto h-1/5">
         <Body />
       </div>
+    </div>
     </>
   )
 }

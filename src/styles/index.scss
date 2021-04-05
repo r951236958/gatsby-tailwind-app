@@ -9,10 +9,20 @@
 @import "scss/grid";
 @import "scss/toggle";
 @import "scss/tooltip";
+@import "scss/search--photos";
 @import "scss/spinner";
 @import "scss/todo--matic";
 @import "scss/todo--example";
+@import "~bootstrap/scss/bootstrap-grid";
 
 input, select {
     border-color: transparent;
+}
+
+$primary-color: white;
+$bg: black;
+
+.dark--mode h1 {
+  color: $primary-color;
+  background-color: $bg;
 }

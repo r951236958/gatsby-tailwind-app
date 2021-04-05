@@ -1,15 +1,17 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function Button({
-  className = '',
-  text = 'button',
-  size = 'base',
+  className,
+  label,
+  size,
   link,
-  type = 'primary',
-  icon = null,
-  iconPosition = 'left',
+  type,
+  icon ,
+  iconPosition,
   submit = false,
   full = false,
+  onClick,
   ...otherProps
 }) {
   let finalClass = `${className} inline-block rounded-sm font-medium border border-solid cursor-pointer text-center transition-colors duration-200`
@@ -43,19 +45,19 @@ function Button({
     finalClass +=
       ' text-white bg-gray-900 border-gray-900 hover:bg-black hover:border-black'
   if (full) finalClass += ' w-full'
-  let content = text
+  let content = label
   if (icon) {
     if (iconPosition === 'left')
       content = (
         <>
           {React.cloneElement(icon, { className: 'mr-2' })}
-          {text}
+          {label}
         </>
       )
     else if (iconPosition === 'right')
       content = (
         <>
-          {text}
+          {label}
           {React.cloneElement(icon, { className: 'ml-2' })}
         </>
       )
@@ -67,11 +69,42 @@ function Button({
       href={link}
       className={finalClass}
       type={submit ? 'submit' : ''}
+      onClick={onClick}
       {...otherProps}
     >
       {content}
     </ButtonTag>
   )
+}
+
+Button.propTypes = {
+  className: PropTypes.bool,
+  label: PropTypes.string.isRequired,
+  type: PropTypes.oneOf([
+    'danger',
+    'warning',
+    'light',
+    'dark',
+    'secondary',
+    'info',
+    'dark',
+    'primary',
+  ]),
+  size: PropTypes.oneOf(['xs', 'sm', 'base', 'lg', 'xl']),
+  icon: PropTypes.node,
+  iconPosition: PropTypes.oneOf(['left', 'right']),
+  onClick: PropTypes.func,
+}
+
+Button.defaultProps = {
+  className: null,
+  size: 'md',
+  icon: null,
+  type: 'primary',
+  iconPosition: 'left',
+  submit: false,
+  full: false,
+  onClick: undefined,
 }
 
 export default Button

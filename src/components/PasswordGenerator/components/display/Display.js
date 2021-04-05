@@ -62,7 +62,7 @@ const Display = () => {
   const [rangeValue, setRange] = useState()
   const [passwordProps, setPasswordProps] = useState()
   const [tooltip, setTooltip] = useState(false)
-  const [type, setType] = useState('password')
+  // const [type, setType] = useState('password')
   const passwordRef = useRef(null)
   let pwdDescription = ''
 
@@ -165,7 +165,7 @@ const Display = () => {
         </div>
 
         <PwdContainer
-          type={type}
+          // type={type}
           setPassword={setPassword}
           setRange={setRange}
           setPasswordProps={setPasswordProps}

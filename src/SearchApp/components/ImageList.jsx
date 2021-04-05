@@ -4,11 +4,11 @@ import ImageCard from './ImageCard'
 const ImageList = ({ photos }) => {
   return (
     <>
-      <div id="photos" className="photos">
+      <div id="search-photos" className="photos">
         {photos.map((image) => (
-          <>
-            <ImageCard key={image.id} image={image} />
-          </>
+          <div key={image.id}>
+            <ImageCard image={image} />
+          </div>
         ))}
       </div>
     </>

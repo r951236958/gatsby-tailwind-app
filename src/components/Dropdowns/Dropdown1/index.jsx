@@ -28,7 +28,7 @@ function Dropdown({
       </OptionTag>
     )
   }
-  const Items = options.map((o, index) => {
+  const Items = options.map((o) => {
     if (Array.isArray(o))
       return (
         <div

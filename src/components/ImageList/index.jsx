@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import acnhData from './acnhData.json'
-import styled from 'styled-components'
 import ImageModal from 'components/ImageModal'
+import styled from 'styled-components'
 
 const StyledTable = styled.div`
   padding: 1rem;
@@ -33,7 +33,7 @@ const StyledTable = styled.div`
   }
 `
 
-const ImageList = ({ OnSubmit, visibility }) => {
+const ImageList = ({ OnSubmit }) => {
   const [term, setTerm] = useState('')
 
   const formSubmit = (e) => {

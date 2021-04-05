@@ -3,7 +3,9 @@ import Prism from 'prismjs'
 import PropTypes from 'prop-types'
 import React, { useEffect } from 'react'
 import Footer from '../Footer'
-// import Footer3 from '../Footer3'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import { ThemeProvider } from '@material-ui/core/styles'
+import theme from '../theme'
 // import Header from '../Header'
 // import Navbar from '../Navbar'
 import Scroll from '../Scroll'
@@ -27,19 +29,22 @@ const Layout = ({ children, title }) => {
 
   return (
     <>
-      <div className="text-gray-900 bg-white dark:bg-gray-900 dark:text-white">
-        <ViewPort />
-        <Scroll showBelow={250} />
-        <TopBar siteTitle={site.siteMetadata.title} />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <div className="text-gray-900 bg-white dark:bg-gray-900 dark:text-white">
+          <ViewPort />
+          <Scroll showBelow={250} />
+          <TopBar siteTitle={site.siteMetadata.title} />
 
-        <main>
-          <div className="w-full max-w-screen-lg min-h-screen p-4 mx-auto md:p-6">
-            <Title>{title}</Title>
-            {children}
-          </div>
-        </main>
-        <Footer />
-      </div>
+          <main>
+            <div className="w-full max-w-screen-lg min-h-screen p-4 mx-auto md:p-6">
+              <Title>{title}</Title>
+              {children}
+            </div>
+          </main>
+          <Footer />
+        </div>
+      </ThemeProvider>
     </>
   )
 }

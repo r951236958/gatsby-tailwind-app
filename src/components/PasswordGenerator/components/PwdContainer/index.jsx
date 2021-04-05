@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react'
 
-import IconButton from 'components/IconButton'
+// import IconButton from 'components/IconButton'
 import SliderBar from 'components/SliderBar'
 import CheckBox from 'components/CheckBox'
 import {

@@ -1,10 +1,10 @@
 // import IconButton from "@material-ui/core/IconButton"
 import { Link } from 'gatsby'
 import React from 'react'
-import FacebookIcon from './FacebookIcon'
-import TwitterIcon from './TwitterIcon'
-import InstagramIcon from './InstagramIcon'
-import GithubIcon from './GithubIcon'
+// import FacebookIcon from './FacebookIcon'
+// import TwitterIcon from './TwitterIcon'
+// import InstagramIcon from './InstagramIcon'
+// import GithubIcon from './GithubIcon'
 
 export default function Footer() {
   return (

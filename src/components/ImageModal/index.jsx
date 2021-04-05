@@ -78,14 +78,14 @@ const ImageHover = styled.div`
   }
 `
 
-const CloseButton = styled.svg`
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 18px;
-  top: 18px;
-  cursor: pointer;
-`
+// const CloseButton = styled.svg`
+//   width: 20px;
+//   height: 20px;
+//   position: absolute;
+//   right: 18px;
+//   top: 18px;
+//   cursor: pointer;
+// `
 
 const modalVariant = {
   initial: { opacity: 0 },

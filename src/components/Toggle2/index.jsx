@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import MoonStarIcon from './MoonStarIcon'
-import SunIcon from './SunIcon'
+import LightIcon from './LightIcon'
 
 function Toggle2({
   className = '',
@@ -41,7 +41,7 @@ function Toggle2({
       >
         <span className={backgroundClass} />
         <span className={togglerClass}>
-          {checked ? <MoonStarIcon /> : <SunIcon />}
+          {checked ? <MoonStarIcon /> : <LightIcon />}
         </span>
       </label>
     </div>
