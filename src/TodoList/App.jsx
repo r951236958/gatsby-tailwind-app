@@ -3,7 +3,7 @@ import Form from './components/Form'
 import FilterButton from './components/FilterButton'
 import Todo from './components/Todo'
 import Editable from './components/Editable'
-import Field from './Components/Field'
+import Field from './components/Field'
 import { nanoid } from 'nanoid'
 
 const DATA = [
