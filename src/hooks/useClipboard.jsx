@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 const useClipboard = resetIsCopied => {
   const [isCopied, setIsCopied] = useState(false)
@@ -26,7 +26,7 @@ const useClipboard = resetIsCopied => {
       .catch(error => console.log(error))
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     let timeout
     if (isCopied && resetIsCopied) {
       timeout = setTimeout(() => setIsCopied(false), resetIsCopied)
